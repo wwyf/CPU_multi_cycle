@@ -13,7 +13,7 @@ module IR(
 );
 
     reg [31:0] Ins_Data;
-    always@(posedge CLK) begin
+    always@(negedge CLK) begin
         if (IRWre == 1)
             Ins_Data = Data_in;
         else 

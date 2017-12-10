@@ -11,6 +11,7 @@ module CPU_single_cycle(
 
     // control unit wire
     wire PCWre;
+    wire IRWre;
     wire ALUSrcA;
     wire ALUSrcB;
     wire DBDataSrc;
@@ -30,7 +31,7 @@ module CPU_single_cycle(
     
 
 
-    PC mypc(
+    PC my_pc(
         .CLK(CLK),
         .Reset(Reset),
         .PCWre(PCWre), 
@@ -38,6 +39,7 @@ module CPU_single_cycle(
         .Addr(Addr)
     );
 
+    wire [31:0] Ins_Data;
     wire [5:0] Op_code;
     wire [4:0] Rs_reg;
     wire [4:0] Rt_reg;
@@ -46,6 +48,13 @@ module CPU_single_cycle(
     wire [15:0] Imm_number;
     Ins_Memory ins(
         .IAddr(Addr),
+        .IDataOut(Ins_Data)
+    );
+
+    IR my_ir(
+        .CLK(CLK),
+        .Data_in(Ins_Data),
+        .IRWre(IRWre),
         .Op_code(Op_code),
         .Rs_reg(Rs_reg),
         .Rt_reg(Rt_reg),
@@ -84,6 +93,20 @@ module CPU_single_cycle(
         .RST(Reset)
     );
 
+    wire [31:0] ADR_Data_1;
+    wire [31:0] BDR_Data_2;
+
+    MultiReg_32 ADR(
+        .CLK(CLK),
+        .Data_in(Re_Data_1),
+        .Data_out(ADR_Data_1)
+    );
+
+    MultiReg_32 BDR(
+        .CLK(CLK),
+        .Data_in(Re_Data_2),
+        .Data_out(BDR_Data_2)
+    );
 
     wire [31:0] Ext_Sa_number = {27'b000000000000000000000000000, Sa_number};
     wire [31:0] Ext_Imm_number;
@@ -99,14 +122,14 @@ module CPU_single_cycle(
 
     mux2to1_32 Select_ALU_srcA(
         .sel(ALUSrcA), 
-        .DataIn1(Re_Data_1),
+        .DataIn1(ADR_Data_1),
         .DataIn2(Ext_Sa_number),
         .DataOut(ALU_a)
     );
 
     mux2to1_32 Select_ALU_srcB(
         .sel(ALUSrcB),  
-        .DataIn1(Re_Data_2),
+        .DataIn1(BDR_Data_2),
         .DataIn2(Ext_Imm_number),
         .DataOut(ALU_b)
     );
@@ -125,23 +148,35 @@ module CPU_single_cycle(
     );
 
     wire [31:0] Re_Mem_Data;
+    wire [31:0] Memory_addr;
+    MultiReg_32 ALUoutDR(
+        .CLK(CLK),
+        .Data_in(ALU_result),
+        .Data_out(Memory_addr)
+    );
 
     Data_Memory MY_Data_Memory(
         .CLK(CLK),
-        .DAddr(ALU_result),
+        .DAddr(Memory_addr),
         .DataIn(Re_Data_2),
         .nRD(nRD),
         .nWR(nWR), 
         .Dataout(Re_Mem_Data)
     );
 
-    
+    wire [31:0] Memory_data;
 
     mux2to1_32 Select_Wre_back_data(
         .sel(DBDataSrc), 
         .DataIn1(ALU_result),
         .DataIn2(Re_Mem_Data),
-        .DataOut(Wre_back_data)
+        .DataOut(Memory_data)
+    );
+
+    MultiReg_32 DBDR(
+        .CLK(CLK),
+        .Data_in(Memory_data),
+        .Data_out(Wre_back_data)
     );
 
     // PC
@@ -163,10 +198,13 @@ module CPU_single_cycle(
     
     
     Control_unit my_control_unit(
+        .CLK(CLK),
         .Opcode(Op_code),
         .zero(zero),
         .sign(sign),
+        .Reset(Reset),
         .PCWre(PCWre),
+        .IRWre(IRWre),
         .RegDst(RegDst),
         .RegWre(RegWre),
         .ALUOp(ALUOp),

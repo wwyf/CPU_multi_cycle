@@ -26,18 +26,23 @@ module Get_output(
 
     always@(*)
     begin
+        if (State == 3'b001) begin
+            IRWre <= 1;
+        end
+        else begin 
+            IRWre <= 0;
+        end
+        if (State == 3'b000 && Opcode != 6'b111111)
+            PCWre <= 1;
+        else 
+            PCWre <= 0;
         case(Opcode)
             6'b000000: begin // add
-                if (State == 3'b011)
-                    PCWre <= 1;
-                else 
-                    PCWre <= 0;
-                if (State == 3'b000)
-                    IRWre <= 1;
-                else
-                    IRWre <= 0;
                 RegDst <= 1;
-                RegWre <= 1;
+                if (State == 3'b011)
+                    RegWre <= 1;
+                else
+                    RegWre <= 0;
                 ALUSrcA <= 0;
                 ALUSrcB <= 0;
                 ALUOp <= 3'b000;
@@ -46,18 +51,27 @@ module Get_output(
                 nRD <= 1;
                 nWR <= 1;
             end
-            6'b000001: begin // addi
+            6'b000001: begin // sub
+                PCWre <= 1;
+                RegDst <= 1;
                 if (State == 3'b011)
-                    PCWre <= 1;
-                else 
-                    PCWre <= 0;
-                if (State == 3'b000)
-                    IRWre <= 1;
+                    RegWre <= 1;
                 else
-                    IRWre <= 0;
-                // InsMemRW <= 1;
+                    RegWre <= 0;
+                ALUSrcA <= 0;
+                ALUSrcB <= 0;
+                ALUOp <= 3'b001;
+                DBDataSrc <= 0;
+                PCSrc <= 0;
+                nRD <= 1;
+                nWR <= 1;
+            end
+            6'b000010: begin // addi
                 RegDst <= 0;
-                RegWre <= 1;
+                if (State == 3'b011)
+                    RegWre <= 1;
+                else
+                    RegWre <= 0;
                 ALUSrcA <= 0;
                 ALUSrcB <= 1;
                 ALUOp <= 3'b000;
@@ -67,23 +81,39 @@ module Get_output(
                 nWR <= 1;
                 PCSrc <= 0;
             end
-            6'b000010: begin // sub
-                PCWre <= 1;
-                // InsMemRW <= 1;
+            6'b010000: begin  // or
                 RegDst <= 1;
-                RegWre <= 1;
+                if (State == 3'b011)
+                    RegWre <= 1;
+                else
+                    RegWre <= 0;
                 ALUSrcA <= 0;
                 ALUSrcB <= 0;
-                ALUOp <= 3'b001;
+                ALUOp <= 3'b011;
                 DBDataSrc <= 0;
-                // ExtSel <= ;
                 nRD <= 1;
                 nWR <= 1;
                 PCSrc <= 0;
             end
-
-            6'b010000: begin // ori
-                PCWre <= 1;
+            6'b010001: begin // and
+                RegDst <= 1;
+                if (State = 3'b011)
+                    RegWre <= 1;
+                else 
+                    RegWre <= 0;
+                ALUSrcA <= 0;
+                ALUSrcB <= 0;
+                ALUOp <= 3'b100;
+                DBDataSrc <= 0;
+                nRD <= 1;
+                nWR <= 1;
+                PCSrc <= 0;
+            end
+            6'b010001: begin // ori
+                if (State == 3'b011)
+                    PCWre <= 1;
+                else 
+                    PCWre <= 0;
                 // InsMemRW <= 1;
                 RegDst <= 0;
                 RegWre <= 1;
@@ -96,37 +126,14 @@ module Get_output(
                 nWR <= 1;
                 PCSrc <= 0;
             end
-            6'b010001: begin // and
-                PCWre <= 1;
-                // InsMemRW <= 1;
-                RegDst <= 1;
-                RegWre <= 1;
-                ALUSrcA <= 0;
-                ALUSrcB <= 0;
-                ALUOp <= 3'b100;
-                DBDataSrc <= 0;
-                // ExtSel <= ;
-                nRD <= 1;
-                nWR <= 1;
-                PCSrc <= 0;
-            end
-            6'b010010: begin  // or
-                PCWre <= 1;
-                RegDst <= 1;
-                RegWre <= 1;
-                ALUSrcA <= 0;
-                ALUSrcB <= 0;
-                ALUOp <= 3'b011;
-                DBDataSrc <= 0;
-                // ExtSel <= ;
-                nRD <= 1;
-                nWR <= 1;
-                PCSrc <= 0;
-            end
+
             6'b011000: begin // sll
                 PCWre <= 1;
                 RegDst <= 1;
-                RegWre <= 1;
+                if (State == 3'b011)
+                    PCWre <= 1;
+                else 
+                    PCWre <= 0;
                 ALUSrcA <= 1;// Sa_number
                 ALUSrcB <= 0;
                 ALUOp <= 3'b010;
@@ -136,15 +143,32 @@ module Get_output(
                 nWR <= 1;
                 PCSrc <= 0;
             end
-            6'b011100: begin // slt
+            6'b100110: begin // slt
                 PCWre <= 1;
                 RegDst <= 1;
-                RegWre <= 1;
-                ALUSrcA <= 0;// Sa_number
+                if (State == 3'b011)
+                    PCWre <= 1;
+                else 
+                    PCWre <= 0;
+                ALUSrcA <= 0;
                 ALUSrcB <= 0;
                 ALUOp <= 3'b110;
                 DBDataSrc <= 0;
-                // ExtSel <= ;
+                nRD <= 1;
+                nWR <= 1;
+                PCSrc <= 0;
+            end
+            6'b100111: begin // slti
+                PCWre <= 1;
+                RegDst <= 1;
+                if (State == 3'b011)
+                    PCWre <= 1;
+                else 
+                    PCWre <= 0;
+                ALUSrcA <= 0;
+                ALUSrcB <= 1;
+                ALUOp <= 3'b110;
+                DBDataSrc <= 0;
                 nRD <= 1;
                 nWR <= 1;
                 PCSrc <= 0;
@@ -152,26 +176,38 @@ module Get_output(
             6'b100110: begin // sw rt, imm(rs)
                 PCWre <= 1;
                 RegDst <= 0;
-                RegWre <= 0;
+                if (State == 3'b011)
+                    PCWre <= 1;
+                else 
+                    PCWre <= 0;
                 ALUSrcA <= 0;
                 ALUSrcB <= 1;
                 ALUOp <= 3'b000;
 //                DBDataSrc <= 1;
                 ExtSel <= 1;
                 nRD <= 1;
-                nWR <= 0;
+                if (State == 3'b100)
+                    nWR <= 0;
+                else
+                    nWR <= 1;
                 PCSrc <= 0;
             end
             6'b100111: begin // lw rt, imm(rs)
                 PCWre <= 1;
                 RegDst <= 0;
-                RegWre <= 1;
+                if (State == 3'b011)
+                    PCWre <= 1;
+                else 
+                    PCWre <= 0;
                 ALUSrcA <= 0;
                 ALUSrcB <= 1;
                 ALUOp <= 3'b000;
                 DBDataSrc <= 1;
                 ExtSel <= 1;
-                nRD <= 0;
+                if (State == 3'b100)
+                    nRD <= 0;
+                else 
+                    nRd <= 1;
                 nWR <= 1;
                 PCSrc <= 0;
             end
@@ -215,18 +251,8 @@ module Get_output(
                 PCSrc <={0,~(sign|zero)};
             end
             6'b111000: begin // j addr
-                PCWre <= 1;
-//                RegDst <= 0;
-//                RegWre <= 0;
-//                ALUSrcA <= 0;
-//                ALUSrcB <= 0;
-//                ALUOp <= 3'b001;
-//                DBDataSrc <= 1;// useless
-//                ExtSel <= 1;
-//                nRD <= 1;
-//                nWD <= 1;
-                PCSrc <= 10;
-            end   
+
+
             6'b111111: begin
                 PCWre <= 0;
                 PCSrc <= 0;
