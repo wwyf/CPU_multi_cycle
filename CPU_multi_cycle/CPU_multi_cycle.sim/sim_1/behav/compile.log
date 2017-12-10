@@ -1,0 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Next_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_output
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:194]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:207]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_unit_tb
+INFO: [VRFC 10-2458] undeclared symbol ALUSrcA, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:31]
+INFO: [VRFC 10-2458] undeclared symbol ALUSrcB, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:32]
+INFO: [VRFC 10-2458] undeclared symbol DBDataSrc, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:33]
+INFO: [VRFC 10-2458] undeclared symbol PCWre, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:34]
+INFO: [VRFC 10-2458] undeclared symbol IRWre, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:35]
+INFO: [VRFC 10-2458] undeclared symbol RegWre, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:36]
+INFO: [VRFC 10-2458] undeclared symbol InsMemRW, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:37]
+INFO: [VRFC 10-2458] undeclared symbol nRD, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:38]
+INFO: [VRFC 10-2458] undeclared symbol nWR, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:39]
+INFO: [VRFC 10-2458] undeclared symbol RegDst, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:40]
+INFO: [VRFC 10-2458] undeclared symbol ExtSel, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:41]
+INFO: [VRFC 10-2458] undeclared symbol PCSrc, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:42]
+INFO: [VRFC 10-2458] undeclared symbol ALUOp, assumed default net type wire [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit_tb.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
