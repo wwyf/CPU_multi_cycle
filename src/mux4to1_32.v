@@ -2,7 +2,7 @@
 
 
 // 四选一
-module mux4to1(
+module mux4to1_32(
     input [1:0] sel,
     input Reset,
     input [31:0] DataIn1,

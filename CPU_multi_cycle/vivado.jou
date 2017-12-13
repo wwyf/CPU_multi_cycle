@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Tue Dec 12 23:26:31 2017
+# Process ID: 11092
+# Current directory: E:/code/CPU_multi_cycle/CPU_multi_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10544 E:\code\CPU_multi_cycle\CPU_multi_cycle\CPU_multi_cycle.xpr
+# Log file: E:/code/CPU_multi_cycle/CPU_multi_cycle/vivado.log
+# Journal file: E:/code/CPU_multi_cycle/CPU_multi_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.xpr
+launch_simulation
+launch_simulation
+open_wave_config E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg
+source CPU_single_cycle_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_wave {{/CPU_single_cycle_tb/My_CPU/My_ALU32}} 
+restart
+run 1000 us
+relaunch_sim
+save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+add_files -norecurse E:/code/CPU_multi_cycle/src/mux4to1_5.v
+update_compile_order -fileset sources_1
+add_files -norecurse E:/code/CPU_multi_cycle/src/mux4to1_32.v
+update_compile_order -fileset sources_1
+relaunch_sim
+add_files -norecurse E:/code/CPU_multi_cycle/src/mux4to1_32.v
+remove_files E:/code/CPU_multi_cycle/src/mux4to1.v
+relaunch_sim
+add_wave {{/CPU_single_cycle_tb/My_CPU}} 
+restart
+run 1000 us
+restart
+relaunch_sim
+add_wave {{/CPU_single_cycle_tb/My_CPU/myregfile/regFile}} 
+restart
+run 1000 us
+add_wave {{/CPU_single_cycle_tb/My_CPU/My_mux2to1_32}} 
+restart
+run 1000 us
+add_wave {{/CPU_single_cycle_tb/My_CPU/my_mux4to1_5}} 
+restart
+run 1000 us
+relaunch_sim
+add_wave {{/CPU_single_cycle_tb/My_CPU/my_control_unit/current_state}} 
+restart
+run 1000 us
+save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
+add_wave {{/CPU_single_cycle_tb/My_CPU/My_mux4to1}} 
+relaunch_sim
+add_wave {{/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/PCSrc}} 
+restart
+run 1000 us
+relaunch_sim
+save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_wave {{/CPU_single_cycle_tb/My_CPU/my_control_unit/my_next_state}} 
+restart
+run 1000 us
+save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
+close_sim

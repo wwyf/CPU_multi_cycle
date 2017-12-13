@@ -15,10 +15,11 @@ module Control_unit(
     output InsMemRW,
     output nRD, 
     output nWR, 
-    output RegDst,
-    output ExtSel,// 
-    output [1:0] PCSrc, // 
-    output [2:0] ALUOp //
+    output WrRegDSrc,
+    output [1:0] RegDst,
+    output ExtSel, 
+    output [1:0] PCSrc,  
+    output [2:0] ALUOp 
 );
     
     reg [2:0] current_state;
@@ -53,6 +54,7 @@ module Control_unit(
         .nRD(nRD),
         .nWR(nWR), 
         .RegDst(RegDst),
+        .WrRegDSrc(WrRegDSrc),
         .ExtSel(ExtSel),
         .PCSrc(PCSrc),
         .ALUOp(ALUOp) 

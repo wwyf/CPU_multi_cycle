@@ -18,7 +18,8 @@ module CPU_single_cycle(
     wire RegWre;
     wire nRD;
     wire nWR;
-    wire RegDst;
+    wire [1:0] RegDst;
+    wire WrRegDSrc;
     wire ExtSel;
     wire [1:0] PCSrc;
     wire [2:0] ALUOp;
@@ -70,10 +71,11 @@ module CPU_single_cycle(
 
     wire [4:0] Wre_reg;
 
-    mux2to1_5 mux2to1_1(
+    mux4to1_5 my_mux4to1_5(
         .sel(RegDst),
-        .DataIn1(Rt_reg),
-        .DataIn2(Rd_reg),
+        .DataIn1(6'b111111),
+        .DataIn2(Rt_reg),
+        .DataIn3(Rd_reg),
         .DataOut(Wre_reg)
     );
 
@@ -165,6 +167,7 @@ module CPU_single_cycle(
     );
 
     wire [31:0] Memory_data;
+    wire [31:0] DB;
 
     mux2to1_32 Select_Wre_back_data(
         .sel(DBDataSrc), 
@@ -176,7 +179,7 @@ module CPU_single_cycle(
     MultiReg_32 DBDR(
         .CLK(CLK),
         .Data_in(Memory_data),
-        .Data_out(Wre_back_data)
+        .Data_out(DB)
     );
 
     // PC
@@ -187,15 +190,24 @@ module CPU_single_cycle(
     wire [31:0] PC4_move = PC4+(Ext_Imm_number << 2);
     wire [31:0] PC4_jump = {PC4[31:28], Ext_Imm_number,2'b00};
 
-    mux4to1 My_mux4to1(
+    mux2to1_32 My_mux2to1_32(
+        .sel(WrRegDSrc),
+        .DataIn1(PC4),
+        .DataIn2(DB),
+        .DataOut(Wre_back_data)
+    );
+
+
+    mux4to1_32 My_mux4to1(
         .sel(PCSrc), 
         .Reset(Reset),
         .DataIn1(PC4),
         .DataIn2(PC4_move),
-        .DataIn3(PC4_jump),
+        .DataIn3(Re_Data_1),
+        .DataIn4(PC4_jump),
         .DataOut(PCData)
     );
-    
+
     
     Control_unit my_control_unit(
         .CLK(CLK),
@@ -214,6 +226,7 @@ module CPU_single_cycle(
         .PCSrc(PCSrc),
         .nRD(nRD),
         .nWR(nWR),
+        .WrRegDSrc(WrRegDSrc),
         .DBDataSrc(DBDataSrc)
     );
 

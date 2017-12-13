@@ -1,8 +1,13 @@
 Vivado Simulator 2015.3
 Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: I:/envirnment/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -10,14 +15,14 @@ Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PC
 Compiling module xil_defaultlib.Ins_Memory
 Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux2to1_5
+Compiling module xil_defaultlib.mux4to1_5
 Compiling module xil_defaultlib.RegFile
 Compiling module xil_defaultlib.MultiReg_32
 Compiling module xil_defaultlib.Extend
 Compiling module xil_defaultlib.mux2to1_32
 Compiling module xil_defaultlib.ALU32
 Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1
+Compiling module xil_defaultlib.mux4to1_32
 Compiling module xil_defaultlib.Next_state
 Compiling module xil_defaultlib.Get_output
 Compiling module xil_defaultlib.Control_unit

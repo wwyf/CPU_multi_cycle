@@ -7,7 +7,7 @@ module PC(
     input [31:0] PCData,
     output reg [31:0] Addr
 );
-    always@(posedge CLK or negedge Reset) begin
+    always@(negedge CLK or negedge Reset) begin
         if(Reset == 0)
             Addr = 0;
         else begin 
