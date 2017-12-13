@@ -188,7 +188,7 @@ module CPU_single_cycle(
     // PC+4与地址前四位拼接
     wire [31:0] PC4 = Addr+4;
     wire [31:0] PC4_move = PC4+(Ext_Imm_number << 2);
-    wire [31:0] PC4_jump = {PC4[31:28], Ext_Imm_number,2'b00};
+    wire [31:0] PC4_jump = {PC4[31:28], Ext_Imm_number[25:0],2'b00};
 
     mux2to1_32 My_mux2to1_32(
         .sel(WrRegDSrc),

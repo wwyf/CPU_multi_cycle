@@ -40,8 +40,10 @@ module Next_state(
             end
 
             sID: begin
-                if (Opcode == j || Opcode == jal || Opcode == jr || Opcode == halt)
+                if (Opcode == j|| Opcode == jr || Opcode == halt)
                     n_state = sIF;
+                else if (Opcode == jal)
+                    n_state = sWB;
                 else
                     n_state = sEXE;
             end

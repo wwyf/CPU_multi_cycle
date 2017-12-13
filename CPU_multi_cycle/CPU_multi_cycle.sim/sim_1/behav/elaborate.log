@@ -1,13 +1,13 @@
 Vivado Simulator 2015.3
 Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
+Running: I:/envirnment/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [D:/code/CPU_multi_cycle/src/CPU_top.v:76]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [D:/code/CPU_multi_cycle/src/CPU_top.v:79]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

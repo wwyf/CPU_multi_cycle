@@ -60,7 +60,7 @@ module Get_output(
         else 
             PCWre <= 0;
 
-        if (State == sWB || ( Opcode == jal && State == sID))
+        if (State == sWB) 
             RegWre <= 1;
         else 
             RegWre <= 0;
@@ -175,7 +175,7 @@ module Get_output(
                 nWR <= 1;
                 PCSrc <= 0;
             end
-            6'b100110: begin // slt
+            slt: begin // slt
                 RegDst <= 2'b10;
                 ALUSrcA <= 0;
                 ALUSrcB <= 0;
@@ -197,9 +197,8 @@ module Get_output(
                 nWR <= 1;
                 PCSrc <= 0;
             end
-            6'b100110: begin // sw rt, imm(rs)
+            sw: begin // sw rt, imm(rs)
                 RegDst <= 0;
-
                 ALUSrcA <= 0;
                 ALUSrcB <= 1;
                 ALUOp <= 3'b000;
@@ -210,15 +209,14 @@ module Get_output(
                     nWR <= 0;
                 else
                     nWR <= 1;
-                PCSrc <= 0;
+                PCSrc <= 2'b00;
             end
-            6'b100111: begin // lw rt, imm(rs)
-                RegDst <= 0;
-
+            lw: begin // lw rt, imm(rs)
+                RegDst <= 2'b01;
                 ALUSrcA <= 0;
                 ALUSrcB <= 1;
                 ALUOp <= 3'b000;
-                DBDataSrc <= 1;
+                // DBDataSrc <= 1;
                 WrRegDSrc <= 1;
                 ExtSel <= 1;
                 if (State == 3'b100)
@@ -226,7 +224,7 @@ module Get_output(
                 else 
                     nRD <= 1;
                 nWR <= 1;
-                PCSrc <= 0;
+                PCSrc <= 2'b00;
             end
             6'b110100: begin // beq rs, rt, imm
                 // RegDst <= 0;
@@ -241,9 +239,8 @@ module Get_output(
                 PCSrc <= {0,zero};
             end    
             6'b110101: begin // bne rs, rt, imm
-                PCWre <= 1;
-                RegDst <= 0;
-                RegWre <= 0;
+                // RegDst <= 0;
+                // RegWre <= 0;
                 ALUSrcA <= 0;
                 ALUSrcB <= 0;
                 ALUOp <= 3'b111;
@@ -253,28 +250,31 @@ module Get_output(
                 nWR <= 1;
                 PCSrc <= {0,~zero};
             end
-            6'b110010: begin // bgtz rs, imm
-                PCWre <= 1;
+            bgtz: begin // bgtz rs, imm
                 RegDst <= 0;
                 RegWre <= 0;
                 ALUSrcA <= 0;
                 ALUSrcB <= 0;
                 ALUOp <= 3'b001;
-                DBDataSrc <= 1;// useless
+                // DBDataSrc <= 1;// useless
                 ExtSel <= 1;
                 nRD <= 1;
                 nWR <= 1;
                 PCSrc <={0,~(sign|zero)};
             end
-            6'b111000: begin // j addr
-            end
-
             jal:begin
                 RegDst <= 2'b00;
                 WrRegDSrc <= 0;
                 PCSrc <= 2'b11;
             end
 
+            jr: begin
+                PCSrc <= 2'b10;
+            end
+
+            j:begin
+                PCSrc <= 2'b11;
+            end
 
             6'b111111: begin
                 PCWre <= 0;

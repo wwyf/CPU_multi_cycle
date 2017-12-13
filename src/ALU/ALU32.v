@@ -36,9 +36,9 @@ module ALU32(
             3'b010 : result = regb << rega;
             3'b011 : result = rega | regb;
             3'b100 : result = rega & regb;
-            3'b101 : result = (rega < regb) ? 1 : 0; // �������űȽ�
+            3'b101 : result = (rega < regb) ? 1 : 0; // 无符号比较
             3'b110 : 
-                begin                           // �����űȽ�
+                begin                        // 有符号比较 
                     if (rega < regb && ((rega[31] == 0 && regb[31] == 0) ||
                              (rega[31] == 1 && regb[31] == 1))) result = 1;
                     else if (rega[31] == 0 && regb[31] == 1) result = 0;

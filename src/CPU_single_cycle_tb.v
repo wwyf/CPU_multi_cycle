@@ -32,7 +32,7 @@ module CPU_single_cycle_tb();
         Reset = 0;
         #30
         Reset = 1;
-        #1000
+        #5000
         Reset = 0;
         #20
         Reset = 1;
