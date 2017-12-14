@@ -6,7 +6,8 @@ module CPU_single_cycle(
     output [15:0] out_sign1,// 当前指令地址PC，下条指令地址PC
     output [15:0] out_sign2,// RS寄存器地址：RS寄存器数据
     output [15:0] out_sign3,// RT寄存器地址：RT寄存器数据
-    output [15:0] out_sign4 // ALU结果输出：DB总线数据
+    output [15:0] out_sign4, // ALU结果输出：DB总线数据
+    output out_sign5
 );
 
     // control unit wire
@@ -24,7 +25,7 @@ module CPU_single_cycle(
     wire [1:0] PCSrc;
     wire [2:0] ALUOp;
 
-
+    assign out_sign5 = RegWre;
 
 
     wire [31:0] PCData;

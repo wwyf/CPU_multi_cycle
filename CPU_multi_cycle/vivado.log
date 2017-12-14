@@ -2,10 +2,10 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Tue Dec 12 23:26:31 2017
-# Process ID: 11092
+# Start of session at: Thu Dec 14 00:31:44 2017
+# Process ID: 278472
 # Current directory: E:/code/CPU_multi_cycle/CPU_multi_cycle
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10544 E:\code\CPU_multi_cycle\CPU_multi_cycle\CPU_multi_cycle.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent280772 E:\code\CPU_multi_cycle\CPU_multi_cycle\CPU_multi_cycle.xpr
 # Log file: E:/code/CPU_multi_cycle/CPU_multi_cycle/vivado.log
 # Journal file: E:/code/CPU_multi_cycle/CPU_multi_cycle\vivado.jou
 #-----------------------------------------------------------
@@ -18,7 +18,6 @@ WARNING: [filemgmt 56-2] IPStaticSourceDir: Could not find the directory 'E:/cod
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.3/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 687.484 ; gain = 137.098
 launch_simulation
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
 INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
@@ -31,33 +30,17 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control
 INFO: [VRFC 10-311] analyzing module Next_state
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Get_output
-ERROR: [VRFC 10-91] nRd is not declared [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:231]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:259]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:272]
-ERROR: [VRFC 10-1040] module Get_output ignored due to previous errors [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:4]
-ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
-launch_simulation
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:259]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:272]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RegFile
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1_32
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mux2to1_32
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
@@ -87,8 +70,11 @@ Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
 Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:259]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:272]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -96,14 +82,14 @@ Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PC
 Compiling module xil_defaultlib.Ins_Memory
 Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux2to1_5
+Compiling module xil_defaultlib.mux4to1_5
 Compiling module xil_defaultlib.RegFile
 Compiling module xil_defaultlib.MultiReg_32
 Compiling module xil_defaultlib.Extend
 Compiling module xil_defaultlib.mux2to1_32
 Compiling module xil_defaultlib.ALU32
 Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1
+Compiling module xil_defaultlib.mux4to1_32
 Compiling module xil_defaultlib.Next_state
 Compiling module xil_defaultlib.Get_output
 Compiling module xil_defaultlib.Control_unit
@@ -118,8 +104,8 @@ Built simulation snapshot CPU_single_cycle_tb_behav
     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 
 source E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/xsim.dir/CPU_single_cycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Dec 13 01:05:04 2017...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 764.273 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 14 00:32:12 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 747.055 ; gain = 0.000
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
@@ -138,11 +124,11 @@ source CPU_single_cycle_tb.tcl
 #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
 #   }
 # }
-# run 1000ns
+# run 5000ns
 WARNING: File D:/code/CPU_multi_cycle/src/Ins_Memory/code.mem referenced on E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v at line 12 cannot be opened for reading. Please ensure that this file is available in the current working directory.
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_single_cycle_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 800.895 ; gain = 36.621
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 785.691 ; gain = 38.637
 relaunch_sim
 INFO: [USF-XSim-27] Simulation object is 'sim_1'
 INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
@@ -155,16 +141,17 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control
 INFO: [VRFC 10-311] analyzing module Next_state
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:259]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:272]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RegFile
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1_32
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mux2to1_32
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
@@ -194,8 +181,11 @@ Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
 Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:259]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:272]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -203,14 +193,14 @@ Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PC
 Compiling module xil_defaultlib.Ins_Memory
 Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux2to1_5
+Compiling module xil_defaultlib.mux4to1_5
 Compiling module xil_defaultlib.RegFile
 Compiling module xil_defaultlib.MultiReg_32
 Compiling module xil_defaultlib.Extend
 Compiling module xil_defaultlib.mux2to1_32
 Compiling module xil_defaultlib.ALU32
 Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1
+Compiling module xil_defaultlib.mux4to1_32
 Compiling module xil_defaultlib.Next_state
 Compiling module xil_defaultlib.Get_output
 Compiling module xil_defaultlib.Control_unit
@@ -220,1147 +210,628 @@ Compiling module xil_defaultlib.glbl
 Built simulation snapshot CPU_single_cycle_tb_behav
 Vivado Simulator 2015.3
 Time resolution is 1 ps
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:259]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:272]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:259]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:272]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux2to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:257]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:270]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:257]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:270]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux2to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:256]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:269]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:256]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:269]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux2to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-add_wave {{/CPU_single_cycle_tb/My_CPU/My_ALU32}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1000 us
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:244]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:257]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:244]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:257]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux2to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-ERROR: [VRFC 10-453] cannot open verilog file ../../../../src/mux4to1.v
-ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:244]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:257]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-ERROR: [VRFC 10-453] cannot open verilog file ../../../../src/mux4to1.v
-ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
-add_files -norecurse E:/code/CPU_multi_cycle/src/mux4to1_5.v
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 785.691 ; gain = 0.000
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library work [E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library work [E:/code/CPU_multi_cycle/src/CPU_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library work [E:/code/CPU_multi_cycle/src/Extend.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend_tb.v" into library work [E:/code/CPU_multi_cycle/src/Extend_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library work [E:/code/CPU_multi_cycle/src/MultiReg_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library work [E:/code/CPU_multi_cycle/src/PC.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/display_top.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/display_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/test.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/test.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top.v" into library work [E:/code/CPU_multi_cycle/src/top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top_tb.v" into library work [E:/code/CPU_multi_cycle/src/top_tb.v:1]
+[Thu Dec 14 00:32:59 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+set_property top top [current_fileset]
 update_compile_order -fileset sources_1
-add_files -norecurse E:/code/CPU_multi_cycle/src/mux4to1_32.v
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library work [E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library work [E:/code/CPU_multi_cycle/src/CPU_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library work [E:/code/CPU_multi_cycle/src/Extend.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend_tb.v" into library work [E:/code/CPU_multi_cycle/src/Extend_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library work [E:/code/CPU_multi_cycle/src/MultiReg_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library work [E:/code/CPU_multi_cycle/src/PC.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/display_top.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/display_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/test.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/test.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top.v" into library work [E:/code/CPU_multi_cycle/src/top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top_tb.v" into library work [E:/code/CPU_multi_cycle/src/top_tb.v:1]
+[Thu Dec 14 00:38:48 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Dec 14 00:39:19 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 14 00:40:20 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1011.285 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1011.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1109.723 ; gain = 246.203
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+add_files -fileset constrs_1 -norecurse E:/code/CPU_multi_cycle/src/my.xdc
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library work [E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library work [E:/code/CPU_multi_cycle/src/CPU_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library work [E:/code/CPU_multi_cycle/src/Extend.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend_tb.v" into library work [E:/code/CPU_multi_cycle/src/Extend_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library work [E:/code/CPU_multi_cycle/src/MultiReg_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library work [E:/code/CPU_multi_cycle/src/PC.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/display_top.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/display_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/test.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/test.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top.v" into library work [E:/code/CPU_multi_cycle/src/top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top_tb.v" into library work [E:/code/CPU_multi_cycle/src/top_tb.v:1]
+[Thu Dec 14 00:46:07 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Dec 14 00:46:47 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/code/CPU_multi_cycle/CPU_multi_cycle/.Xil/Vivado-278472-wyf/dcp/top.xdc]
+Finished Parsing XDC File [E:/code/CPU_multi_cycle/CPU_multi_cycle/.Xil/Vivado-278472-wyf/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1491.195 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1491.195 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 14 00:47:48 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.3
+  **** Build date : Sep 28 2015-20:29:55
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183737304A
+set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 14 00:52:52 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+[Thu Dec 14 00:52:52 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/CPU_single_cycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/CPU_single_cycle_tb_behav_278472_1513182757.btree
+WARNING: [Vivado 12-3661] Failed to remove file:E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/simulate.log
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Next_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_output
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2to1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MultiReg_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ins_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_single_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module displayReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncing
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv_190hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.3
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncing
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Ins_Memory
+Compiling module xil_defaultlib.IR
+Compiling module xil_defaultlib.mux4to1_5
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.MultiReg_32
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.mux2to1_32
+Compiling module xil_defaultlib.ALU32
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.mux4to1_32
+Compiling module xil_defaultlib.Next_state
+Compiling module xil_defaultlib.Get_output
+Compiling module xil_defaultlib.Control_unit
+Compiling module xil_defaultlib.CPU_single_cycle
+Compiling module xil_defaultlib.clkdiv_190hz
+Compiling module xil_defaultlib.displayReg
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+
+****** Webtalk v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 14 01:03:21 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1594.898 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -view {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.3
+Time resolution is 1 ps
+open_wave_config E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/CLK was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Reset was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/current_state was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/out_sign1 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Addr was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/myregfile/regFile was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_next_state/CLK was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_next_state/Opcode was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_next_state/cur_state was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_next_state/n_state was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/MY_Data_Memory/ram was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/CLK was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Reset was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/out_sign1 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/out_sign2 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/out_sign3 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/out_sign4 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/PCWre was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/IRWre was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/ALUSrcA was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/ALUSrcB was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/DBDataSrc was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/RegWre was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/nRD was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/nWR was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/RegDst was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/WrRegDSrc was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/ExtSel was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/PCSrc was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/ALUOp was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/PCData was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Addr was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Ins_Data was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Op_code was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Rs_reg was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Rt_reg was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Rd_reg was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Sa_number was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Imm_number was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Wre_reg was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Re_Data_1 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Re_Data_2 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Wre_back_data was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/ADR_Data_1 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/BDR_Data_2 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Ext_Sa_number was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Ext_Imm_number was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/ALU_a was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/ALU_b was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/ALU_result was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/sign was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/zero was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Re_Mem_Data was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Memory_addr was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/Memory_data was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/DB was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/PC4 was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/PC4_move was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/PC4_jump was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/PCSrc was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/PCSrc was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/Opcode was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/State was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/zero was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sign was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/Reset was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/ALUSrcA was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/ALUSrcB was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/DBDataSrc was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/PCWre was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/IRWre was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/RegWre was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/InsMemRW was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/nRD was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/nWR was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/RegDst was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/WrRegDSrc was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/ExtSel was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/PCSrc was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/ALUOp was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sIF was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sID was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sEXE was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sMEM was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sWB was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/addi was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/ori was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sll was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/add was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sub was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/slt was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/slti was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sw was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/lw was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/beq was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/bne was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/bgtz was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/j was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/jr was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/Or was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/And was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/jal was not found in the design.
+WARNING: Simulation object /CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/halt was not found in the design.
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1594.898 ; gain = 0.000
+add_wave {{/top_tb/my_top/my_CPU}} 
+add_wave {{/top_tb/my_top/my_debouncing}} 
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 14 01:06:07 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+[Thu Dec 14 01:06:07 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 14 01:09:37 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+[Thu Dec 14 01:09:37 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 14 01:16:54 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+[Thu Dec 14 01:16:54 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
 relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:244]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:257]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-ERROR: [VRFC 10-453] cannot open verilog file ../../../../src/mux4to1.v
-ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
-add_files -norecurse E:/code/CPU_multi_cycle/src/mux4to1_32.v
-WARNING: [filemgmt 56-12] File 'E:/code/CPU_multi_cycle/src/mux4to1_32.v' cannot be added to the project because it already exists in the project, skipping this file
-remove_files E:/code/CPU_multi_cycle/src/mux4to1.v
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:244]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:257]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port sel [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port RegDst [E:/code/CPU_multi_cycle/src/CPU_top.v:220]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:244]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:257]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-add_wave {{/CPU_single_cycle_tb/My_CPU}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1000 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port sel [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port RegDst [E:/code/CPU_multi_cycle/src/CPU_top.v:220]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-add_wave {{/CPU_single_cycle_tb/My_CPU/myregfile/regFile}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1000 us
-add_wave {{/CPU_single_cycle_tb/My_CPU/My_mux2to1_32}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1000 us
-add_wave {{/CPU_single_cycle_tb/My_CPU/my_mux4to1_5}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1000 us
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-add_wave {{/CPU_single_cycle_tb/My_CPU/my_control_unit/current_state}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1000 us
-save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
-add_wave {{/CPU_single_cycle_tb/My_CPU/My_mux4to1}} 
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Waiting for 1 sub-compilation(s) to finish...
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-add_wave {{/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/PCSrc}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1000 us
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-relaunch_sim
-INFO: [USF-XSim-27] Simulation object is 'sim_1'
-INFO: [USF-XSim-37] Inspecting design source files for 'CPU_single_cycle_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-"xvlog -m64 --relax -prj CPU_single_cycle_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Next_state
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Get_output
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2to1_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MultiReg_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Ins_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Extend
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Data_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_single_cycle_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.sim/sim_1/behav'
-Vivado Simulator 2015.3
-Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto e8d93131724a4dd89b92a0269d107853 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_single_cycle_tb_behav xil_defaultlib.CPU_single_cycle_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port DataIn1 [E:/code/CPU_multi_cycle/src/CPU_top.v:76]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port DataOut [E:/code/CPU_multi_cycle/src/CPU_top.v:79]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:241]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:254]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:267]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Ins_Memory
-Compiling module xil_defaultlib.IR
-Compiling module xil_defaultlib.mux4to1_5
-Compiling module xil_defaultlib.RegFile
-Compiling module xil_defaultlib.MultiReg_32
-Compiling module xil_defaultlib.Extend
-Compiling module xil_defaultlib.mux2to1_32
-Compiling module xil_defaultlib.ALU32
-Compiling module xil_defaultlib.Data_Memory
-Compiling module xil_defaultlib.mux4to1_32
-Compiling module xil_defaultlib.Next_state
-Compiling module xil_defaultlib.Get_output
-Compiling module xil_defaultlib.Control_unit
-Compiling module xil_defaultlib.CPU_single_cycle
-Compiling module xil_defaultlib.CPU_single_cycle_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_single_cycle_tb_behav
-Vivado Simulator 2015.3
-Time resolution is 1 ps
-add_wave {{/CPU_single_cycle_tb/My_CPU/my_control_unit/my_next_state}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1000 us
-save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
+ERROR: [Vivado 12-1501] Simulator for snapshot 'Behavioral:sim_1:Functional:top_tb' is already running. To launch simulation, change the snapshot name in the simulation fileset settings or close the current simulation.
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-1501] Simulator for snapshot 'Behavioral:sim_1:Functional:top_tb' is already running. To launch simulation, change the snapshot name in the simulation fileset settings or close the current simulation.
+
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+reset_run impl_1
+launch_runs impl_1
+[Thu Dec 14 01:18:15 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/code/CPU_multi_cycle/CPU_multi_cycle/.Xil/Vivado-278472-wyf/dcp/top.xdc]
+Finished Parsing XDC File [E:/code/CPU_multi_cycle/CPU_multi_cycle/.Xil/Vivado-278472-wyf/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1615.457 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1615.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 14 01:19:22 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+refresh_design
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/code/CPU_multi_cycle/CPU_multi_cycle/.Xil/Vivado-278472-wyf/dcp/top.xdc]
+Finished Parsing XDC File [E:/code/CPU_multi_cycle/CPU_multi_cycle/.Xil/Vivado-278472-wyf/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1615.457 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1615.457 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library work [E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library work [E:/code/CPU_multi_cycle/src/CPU_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library work [E:/code/CPU_multi_cycle/src/Extend.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend_tb.v" into library work [E:/code/CPU_multi_cycle/src/Extend_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library work [E:/code/CPU_multi_cycle/src/MultiReg_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library work [E:/code/CPU_multi_cycle/src/PC.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/display_top.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/display_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/test.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/test.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top.v" into library work [E:/code/CPU_multi_cycle/src/top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top_tb.v" into library work [E:/code/CPU_multi_cycle/src/top_tb.v:1]
+[Thu Dec 14 01:20:25 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v" into library work [E:/code/CPU_multi_cycle/src/ALU/ALU32_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v" into library work [E:/code/CPU_multi_cycle/src/CPU_single_cycle_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/CPU_top.v" into library work [E:/code/CPU_multi_cycle/src/CPU_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend.v" into library work [E:/code/CPU_multi_cycle/src/Extend.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Extend_tb.v" into library work [E:/code/CPU_multi_cycle/src/Extend_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v" into library work [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/MultiReg_32.v" into library work [E:/code/CPU_multi_cycle/src/MultiReg_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v" into library work [E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/PC.v" into library work [E:/code/CPU_multi_cycle/src/PC.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v" into library work [E:/code/CPU_multi_cycle/src/RegFile/RegFile_tb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/display_top.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/display_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux2to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux2to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_32.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/mux4to1_5.v" into library work [E:/code/CPU_multi_cycle/src/mux4to1_5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/DEBUG/test.v" into library work [E:/code/CPU_multi_cycle/src/DEBUG/test.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top.v" into library work [E:/code/CPU_multi_cycle/src/top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/code/CPU_multi_cycle/src/top_tb.v" into library work [E:/code/CPU_multi_cycle/src/top_tb.v:1]
+[Thu Dec 14 01:21:45 2017] Launched synth_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Dec 14 01:22:30 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/code/CPU_multi_cycle/CPU_multi_cycle/.Xil/Vivado-278472-wyf/dcp/top.xdc]
+Finished Parsing XDC File [E:/code/CPU_multi_cycle/CPU_multi_cycle/.Xil/Vivado-278472-wyf/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1615.457 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1615.457 ; gain = 0.000
+place_ports test_port_regwre L1
+set_property IOSTANDARD LVCMOS33 [get_ports [list test_port_regwre]]
+set_property target_constrs_file E:/code/CPU_multi_cycle/src/my.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Dec 14 01:24:13 2017] Launched impl_1...
+Run output will be captured here: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183737304A
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 09:45:27 2017...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 14 08:43:03 2017...

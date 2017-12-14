@@ -91,7 +91,7 @@ module debouncing (
              else                   
                  key_sec_pre <= key_sec;             
          end      
-       assign  key_pulse_n = key_sec_pre & (~key_sec); 
-       assign  key_pulse = ~key_pulse_n;    
+       assign  key_pulse = key_sec_pre & (~key_sec); 
+    //    assign  key_pulse = ~key_pulse_n;    
  
 endmodule

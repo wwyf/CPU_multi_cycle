@@ -9,14 +9,16 @@ module top(
     output [3:0] pos_ctrl,
     output [7:0] num_ctrl,
     output test_button_in,
-    output reg test_button_out
+    output reg test_button_out,
+    output test_port_regwre
     //  output [15:0] out_display_data
 );
     initial begin
         test_button_out = 0;
     end
 
-    assign test_button_in = button_in;// DEBUG
+    assign test_button_in = button_out;// DEBUG
+    assign test_port_regwre = out_sign5;
 
     // assign out_display_data = display_data;
     
@@ -40,6 +42,7 @@ module top(
     wire [15:0] out_sign2;
     wire [15:0] out_sign3;
     wire [15:0] out_sign4;
+    wire out_sign5;
     
     // test my_test( 
     //     .CLK(button_out),
@@ -56,7 +59,8 @@ module top(
         .out_sign1(out_sign1),
         .out_sign2(out_sign2),
         .out_sign3(out_sign3),
-        .out_sign4(out_sign4)       // output some reg
+        .out_sign4(out_sign4),       // output some reg
+        .out_sign5(out_sign5)
     );
 
     always@(*) begin
