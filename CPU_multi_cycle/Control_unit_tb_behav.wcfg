@@ -12,10 +12,10 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="396000001fs"></ZoomEndTime>
-      <Cursor1Time time="2014450000fs"></Cursor1Time>
+      <ZoomEndTime time="428000001fs"></ZoomEndTime>
+      <Cursor1Time time="56000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="103" />
+   <WVObjectSize size="93" />
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -28,6 +28,14 @@
       <obj_property name="ElementShortName">current_state[2:0]</obj_property>
       <obj_property name="ObjectShortName">current_state[2:0]</obj_property>
    </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_next_state/Opcode" type="array">
+      <obj_property name="ElementShortName">Opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_next_state/n_state" type="array">
+      <obj_property name="ElementShortName">n_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">n_state[2:0]</obj_property>
+   </wvobject>
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/out_sign1" type="array">
       <obj_property name="ElementShortName">out_sign1[15:0]</obj_property>
       <obj_property name="ObjectShortName">out_sign1[15:0]</obj_property>
@@ -35,6 +43,50 @@
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/Addr" type="array">
       <obj_property name="ElementShortName">Addr[31:0]</obj_property>
       <obj_property name="ObjectShortName">Addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Op_code" type="array">
+      <obj_property name="ElementShortName">Op_code[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Op_code[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Ins_Data" type="array">
+      <obj_property name="ElementShortName">Ins_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Ins_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/IRWre" type="logic">
+      <obj_property name="ElementShortName">IRWre</obj_property>
+      <obj_property name="ObjectShortName">IRWre</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Op_code" type="array">
+      <obj_property name="ElementShortName">Op_code[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Op_code[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Rs_reg" type="array">
+      <obj_property name="ElementShortName">Rs_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Rs_reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Rt_reg" type="array">
+      <obj_property name="ElementShortName">Rt_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Rt_reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Rd_reg" type="array">
+      <obj_property name="ElementShortName">Rd_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Rd_reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Sa_number" type="array">
+      <obj_property name="ElementShortName">Sa_number[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Sa_number[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Imm_number" type="array">
+      <obj_property name="ElementShortName">Imm_number[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Imm_number[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_ir/Ins_Data" type="array">
+      <obj_property name="ElementShortName">Ins_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Ins_Data[31:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/myregfile/regFile" type="array">
       <obj_property name="ElementShortName">regFile[1:31][31:0]</obj_property>
@@ -336,97 +388,5 @@
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/ALUOp" type="array">
       <obj_property name="ElementShortName">ALUOp[2:0]</obj_property>
       <obj_property name="ObjectShortName">ALUOp[2:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sIF" type="array">
-      <obj_property name="ElementShortName">sIF[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sIF[2:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sID" type="array">
-      <obj_property name="ElementShortName">sID[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sID[2:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sEXE" type="array">
-      <obj_property name="ElementShortName">sEXE[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sEXE[2:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sMEM" type="array">
-      <obj_property name="ElementShortName">sMEM[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sMEM[2:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sWB" type="array">
-      <obj_property name="ElementShortName">sWB[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sWB[2:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/addi" type="array">
-      <obj_property name="ElementShortName">addi[5:0]</obj_property>
-      <obj_property name="ObjectShortName">addi[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/ori" type="array">
-      <obj_property name="ElementShortName">ori[5:0]</obj_property>
-      <obj_property name="ObjectShortName">ori[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sll" type="array">
-      <obj_property name="ElementShortName">sll[5:0]</obj_property>
-      <obj_property name="ObjectShortName">sll[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/add" type="array">
-      <obj_property name="ElementShortName">add[5:0]</obj_property>
-      <obj_property name="ObjectShortName">add[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sub" type="array">
-      <obj_property name="ElementShortName">sub[5:0]</obj_property>
-      <obj_property name="ObjectShortName">sub[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/slt" type="array">
-      <obj_property name="ElementShortName">slt[5:0]</obj_property>
-      <obj_property name="ObjectShortName">slt[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/slti" type="array">
-      <obj_property name="ElementShortName">slti[5:0]</obj_property>
-      <obj_property name="ObjectShortName">slti[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/sw" type="array">
-      <obj_property name="ElementShortName">sw[5:0]</obj_property>
-      <obj_property name="ObjectShortName">sw[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/lw" type="array">
-      <obj_property name="ElementShortName">lw[5:0]</obj_property>
-      <obj_property name="ObjectShortName">lw[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/beq" type="array">
-      <obj_property name="ElementShortName">beq[5:0]</obj_property>
-      <obj_property name="ObjectShortName">beq[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/bne" type="array">
-      <obj_property name="ElementShortName">bne[5:0]</obj_property>
-      <obj_property name="ObjectShortName">bne[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/bgtz" type="array">
-      <obj_property name="ElementShortName">bgtz[5:0]</obj_property>
-      <obj_property name="ObjectShortName">bgtz[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/j" type="array">
-      <obj_property name="ElementShortName">j[5:0]</obj_property>
-      <obj_property name="ObjectShortName">j[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/jr" type="array">
-      <obj_property name="ElementShortName">jr[5:0]</obj_property>
-      <obj_property name="ObjectShortName">jr[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/Or" type="array">
-      <obj_property name="ElementShortName">Or[5:0]</obj_property>
-      <obj_property name="ObjectShortName">Or[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/And" type="array">
-      <obj_property name="ElementShortName">And[5:0]</obj_property>
-      <obj_property name="ObjectShortName">And[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/jal" type="array">
-      <obj_property name="ElementShortName">jal[5:0]</obj_property>
-      <obj_property name="ObjectShortName">jal[5:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/my_control_unit/my_get_output/halt" type="array">
-      <obj_property name="ElementShortName">halt[5:0]</obj_property>
-      <obj_property name="ObjectShortName">halt[5:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -9,7 +9,7 @@ module Ins_Memory(
     reg [7:0] ram [0:240]; // 指令存储�??
     reg [31:0] Ins_Data;
     initial begin
-        $readmemb("E:/code/CPU_multi_cycle/src/Ins_Memory/code.mem", ram);
+        $readmemb("D:/code/CPU_multi_cycle/src/Ins_Memory/code.mem", ram);
     end
     
     always@(*) begin

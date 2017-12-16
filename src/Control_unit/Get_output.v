@@ -49,7 +49,7 @@ module Get_output(
 
     always@(*)
     begin
-        if (State == sID) begin
+        if (State == sIF) begin
             IRWre <= 1;
         end
         else begin 
@@ -60,7 +60,7 @@ module Get_output(
         else 
             PCWre <= 0;
 
-        if (State == sWB) 
+        if (State == sWB || (State == sID && Opcode == jal)) 
             RegWre <= 1;
         else 
             RegWre <= 0;

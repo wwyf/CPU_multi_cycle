@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.xpr">
+<Project Version="7" Minor="10" Path="D:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e8d93131724a4dd89b92a0269d107853"/>
@@ -276,7 +276,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="top_tb"/>
+        <Option Name="TopModule" Val="CPU_single_cycle_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/Control_unit_tb_behav.wcfg"/>

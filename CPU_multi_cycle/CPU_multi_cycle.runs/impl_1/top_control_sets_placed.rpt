@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Thu Dec 14 01:24:40 2017
-| Host         : wyf running 64-bit Service Pack 1  (build 7601)
+| Date         : Thu Dec 14 12:09:22 2017
+| Host         :  running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
 | Device       : xc7a35t
@@ -23,7 +23,7 @@ Table of Contents
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
 | Number of unique control sets                                     |    11 |
-| Minimum Number of register sites lost to control set restrictions |    50 |
+| Minimum Number of register sites lost to control set restrictions |    57 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              45 |           18 |
+| No           | No                    | No                     |              78 |           43 |
 | No           | No                    | Yes                    |              26 |            8 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              32 |           22 |
-| Yes          | No                    | Yes                    |               7 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               7 |            4 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -45,20 +45,20 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+--------------------------------------------+--------------------------------+------------------+----------------+
-|           Clock Signal          |                Enable Signal               |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
-+---------------------------------+--------------------------------------------+--------------------------------+------------------+----------------+
-|  my_CPU/my_ir/num_ctrl[4]_2     |                                            |                                |                1 |              1 |
-|  my_CPU/my_ir/data_reg[2]_0     |                                            |                                |                1 |              1 |
-|  my_CPU/my_ir/data_reg[0]_0     |                                            |                                |                1 |              1 |
-|  my_CPU/my_ir/Addr_reg[1]_15[0] |                                            |                                |                2 |              2 |
-|  my_clkdiv_190hz/CLK            |                                            |                                |                1 |              4 |
-|  my_CPU/my_ir/data_reg[6]_4     |                                            |                                |                2 |              5 |
-| ~test_button_in_OBUF_BUFG       | my_CPU/my_control_unit/E[0]                | my_debouncing/key_sec_reg[0]_0 |                2 |              7 |
-|  test_button_in_OBUF_BUFG       |                                            |                                |                5 |             12 |
-|  CLK_IBUF_BUFG                  |                                            |                                |                5 |             19 |
-|  CLK_IBUF_BUFG                  |                                            | my_debouncing/key_sec_reg[0]_0 |                8 |             26 |
-| ~test_button_in_OBUF_BUFG       | my_CPU/my_control_unit/Ins_Data_reg[31][0] |                                |               22 |             32 |
-+---------------------------------+--------------------------------------------+--------------------------------+------------------+----------------+
++---------------------------------+-----------------------------+--------------------------------+------------------+----------------+
+|           Clock Signal          |        Enable Signal        |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------------------+-----------------------------+--------------------------------+------------------+----------------+
+| ~test_button_in_OBUF_BUFG       |                             |                                |                1 |              1 |
+|  my_CPU/my_ir/num_ctrl[4]_5     |                             |                                |                1 |              1 |
+|  my_CPU/my_ir/data_reg[7]_4     |                             |                                |                1 |              1 |
+|  my_CPU/my_ir/data_reg[0]       |                             |                                |                1 |              1 |
+|  my_CPU/my_ir/Addr_reg[1]_17[0] |                             |                                |                2 |              2 |
+|  my_clkdiv_190hz/CLK            |                             |                                |                1 |              4 |
+|  my_CPU/my_ir/data_reg[7]_2     |                             |                                |                2 |              5 |
+| ~test_button_in_OBUF_BUFG       | my_CPU/my_control_unit/E[0] | my_debouncing/key_sec_reg[0]_0 |                4 |              7 |
+|  CLK_IBUF_BUFG                  |                             |                                |                5 |             19 |
+|  CLK_IBUF_BUFG                  |                             | my_debouncing/key_sec_reg[0]_0 |                8 |             26 |
+|  test_button_in_OBUF_BUFG       |                             |                                |               29 |             44 |
++---------------------------------+-----------------------------+--------------------------------+------------------+----------------+
 
 

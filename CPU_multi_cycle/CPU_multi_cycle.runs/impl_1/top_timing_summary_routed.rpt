@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Thu Dec 14 01:25:01 2017
-| Host         : wyf running 64-bit Service Pack 1  (build 7601)
+| Date         : Thu Dec 14 12:10:12 2017
+| Host         : wyf2 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
 | Device       : 7a35t-cpg236
@@ -54,23 +54,23 @@ Table of Contents
 --------------------
  There are 45 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Ins_Data_reg[26]/C (HIGH)
+ There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Op_code_reg[0]/C (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Ins_Data_reg[27]/C (HIGH)
+ There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Op_code_reg[1]/C (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Ins_Data_reg[28]/C (HIGH)
+ There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Op_code_reg[2]/C (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Ins_Data_reg[29]/C (HIGH)
+ There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Op_code_reg[3]/C (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Ins_Data_reg[30]/C (HIGH)
+ There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Op_code_reg[4]/C (HIGH)
 
- There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Ins_Data_reg[31]/C (HIGH)
+ There are 10 register/latch pins with no clock driven by root clock pin: my_CPU/my_ir/Op_code_reg[5]/C (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: my_clkdiv_190hz/q_reg[18]/C (HIGH)
 
- There are 51 register/latch pins with no clock driven by root clock pin: my_debouncing/key_sec_pre_reg[0]/C (HIGH)
+ There are 52 register/latch pins with no clock driven by root clock pin: my_debouncing/key_sec_pre_reg[0]/C (HIGH)
 
- There are 51 register/latch pins with no clock driven by root clock pin: my_debouncing/key_sec_reg[0]/C (HIGH)
+ There are 52 register/latch pins with no clock driven by root clock pin: my_debouncing/key_sec_reg[0]/C (HIGH)
 
 
 2. checking constant_clock
@@ -85,7 +85,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 182 pins that are not constrained for maximum delay. (HIGH)
+ There are 151 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -99,7 +99,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 14 ports with no output delay specified. (HIGH)
+ There are 15 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

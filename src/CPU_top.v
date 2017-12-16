@@ -55,7 +55,7 @@ module CPU_single_cycle(
 
     IR my_ir(
         .CLK(CLK),
-        .Data_in(Ins_Data),
+        .Ins_Data(Ins_Data),
         .IRWre(IRWre),
         .Op_code(Op_code),
         .Rs_reg(Rs_reg),

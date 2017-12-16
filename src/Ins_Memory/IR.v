@@ -2,7 +2,7 @@
 
 module IR(
     input CLK,
-    input [31:0] Data_in,
+    input [31:0] Ins_Data,
     input IRWre,
     output reg [5:0] Op_code,
     output reg [4:0] Rs_reg,
@@ -12,15 +12,15 @@ module IR(
     output reg [15:0] Imm_number
 );
 
-    reg [31:0] Ins_Data;
-    always@(negedge CLK) begin
-        if (IRWre == 1)
-            Ins_Data = Data_in;
-        else 
-            Ins_Data = Ins_Data;
-    end
+    // reg [31:0] Ins_Data;
+    // always@(negedge CLK) begin
+    //     if (IRWre == 1)
+    //         Ins_Data = Data_in;
+    //     else 
+    //         Ins_Data = Ins_Data;
+    // end
 
-    always@(*) begin
+    always@(posedge CLK) begin
         Op_code =  Ins_Data[31:26];
         Rs_reg = Ins_Data[25:21];
         Rt_reg = Ins_Data[20:16];

@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Thu Dec 14 01:25:01 2017
-| Host         : wyf running 64-bit Service Pack 1  (build 7601)
+| Date         : Thu Dec 14 12:10:12 2017
+| Host         : wyf2 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 8
+             Violations found: 7
 
 2. REPORT DETAILS
 -----------------
@@ -39,37 +39,32 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net my_CPU/my_ir/Addr_reg[1]_15[0] is a gated clock net sourced by a combinational pin my_CPU/my_ir/PCSrc_reg[1]_i_2/O, cell my_CPU/my_ir/PCSrc_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net my_CPU/my_ir/Addr_reg[1]_17[0] is a gated clock net sourced by a combinational pin my_CPU/my_ir/PCSrc_reg[1]_i_2/O, cell my_CPU/my_ir/PCSrc_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net my_CPU/my_ir/data_reg[0]_0 is a gated clock net sourced by a combinational pin my_CPU/my_ir/ExtSel_reg_i_2/O, cell my_CPU/my_ir/ExtSel_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net my_CPU/my_ir/data_reg[0] is a gated clock net sourced by a combinational pin my_CPU/my_ir/ExtSel_reg_i_2/O, cell my_CPU/my_ir/ExtSel_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net my_CPU/my_ir/data_reg[2]_0 is a gated clock net sourced by a combinational pin my_CPU/my_ir/DBDataSrc_reg_i_2/O, cell my_CPU/my_ir/DBDataSrc_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net my_CPU/my_ir/data_reg[7]_2 is a gated clock net sourced by a combinational pin my_CPU/my_ir/ALUSrcA_reg_i_1/O, cell my_CPU/my_ir/ALUSrcA_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net my_CPU/my_ir/data_reg[6]_4 is a gated clock net sourced by a combinational pin my_CPU/my_ir/ALUSrcA_reg_i_1/O, cell my_CPU/my_ir/ALUSrcA_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net my_CPU/my_ir/data_reg[7]_4 is a gated clock net sourced by a combinational pin my_CPU/my_ir/DBDataSrc_reg_i_2/O, cell my_CPU/my_ir/DBDataSrc_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#5 Warning
 Gated clock check  
-Net my_CPU/my_ir/data_reg[6]_4 is a gated clock net sourced by a combinational pin my_CPU/my_ir/ALUSrcA_reg_i_1/O, cell my_CPU/my_ir/ALUSrcA_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net my_CPU/my_ir/data_reg[7]_4 is a gated clock net sourced by a combinational pin my_CPU/my_ir/DBDataSrc_reg_i_2/O, cell my_CPU/my_ir/DBDataSrc_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#6 Warning
 Gated clock check  
-Net my_CPU/my_ir/num_ctrl[4]_2 is a gated clock net sourced by a combinational pin my_CPU/my_ir/WrRegDSrc_reg_i_2/O, cell my_CPU/my_ir/WrRegDSrc_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#7 Warning
-Gated clock check  
-Net my_CPU/my_ir/num_ctrl[4]_2 is a gated clock net sourced by a combinational pin my_CPU/my_ir/WrRegDSrc_reg_i_2/O, cell my_CPU/my_ir/WrRegDSrc_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net my_CPU/my_ir/num_ctrl[4]_5 is a gated clock net sourced by a combinational pin my_CPU/my_ir/WrRegDSrc_reg_i_2/O, cell my_CPU/my_ir/WrRegDSrc_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

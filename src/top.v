@@ -10,11 +10,13 @@ module top(
     output [7:0] num_ctrl,
     output test_button_in,
     output reg test_button_out,
+    output reg test_button_out_n,
     output test_port_regwre
     //  output [15:0] out_display_data
 );
     initial begin
         test_button_out = 0;
+        test_button_out_n = 0;
     end
 
     assign test_button_in = button_out;// DEBUG
@@ -35,6 +37,10 @@ module top(
 
     always@(posedge button_out) begin
         test_button_out = ~test_button_out;
+    end
+
+    always@(negedge button_out) begin   
+        test_button_out_n = ~test_button_out_n;
     end
 
 
