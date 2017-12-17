@@ -11,12 +11,14 @@ module top(
     output test_button_in,
     output reg test_button_out,
     output reg test_button_out_n,
-    output test_port_regwre
+    output test_port_regwre,
+    reg test_CLK
     //  output [15:0] out_display_data
 );
     initial begin
         test_button_out = 0;
         test_button_out_n = 0;
+        test_CLK = 0;
     end
 
     assign test_button_in = button_out;// DEBUG
@@ -49,6 +51,9 @@ module top(
     wire [15:0] out_sign3;
     wire [15:0] out_sign4;
     wire out_sign5;
+    always@(posedge button_out) begin
+        test_CLK <= ~test_CLK;
+    end
     
     // test my_test( 
     //     .CLK(button_out),
@@ -60,7 +65,7 @@ module top(
     // );
 // 没有对时钟下降沿消抖？也不需要消抖。
     CPU_single_cycle my_CPU( 
-        .CLK(button_out),
+        .CLK(test_CLK),
         .Reset(Reset),
         .out_sign1(out_sign1),
         .out_sign2(out_sign2),

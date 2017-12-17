@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/code/CPU_multi_cycle/src/my.xdc rfile:../../../../src/my.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/code/CPU_multi_cycle/src/my.xdc rfile:../../../../src/my.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports CLK]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
@@ -41,3 +41,5 @@ set_property src_info {type:XDC file:1 line:49 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN V14 [get_ports test_button_out]
 set_property src_info {type:XDC file:1 line:54 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L1 [get_ports test_port_regwre]
+set_property src_info {type:XDC file:1 line:58 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U14 [get_ports test_button_out_n]

@@ -33,9 +33,9 @@ module Control_unit(
 
     always@(posedge CLK) begin
         if (Reset == 0)
-            current_state = 3'b000;
+            current_state <= 3'b000;
         else
-            current_state = n_state;
+            current_state <= n_state;
     end 
 
     Get_output my_get_output(

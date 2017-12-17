@@ -2,10 +2,10 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Thu Dec 14 00:31:44 2017
-# Process ID: 278472
+# Start of session at: Sun Dec 17 19:13:49 2017
+# Process ID: 63788
 # Current directory: E:/code/CPU_multi_cycle/CPU_multi_cycle
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent280772 E:\code\CPU_multi_cycle\CPU_multi_cycle\CPU_multi_cycle.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent64884 E:\code\CPU_multi_cycle\CPU_multi_cycle\CPU_multi_cycle.xpr
 # Log file: E:/code/CPU_multi_cycle/CPU_multi_cycle/vivado.log
 # Journal file: E:/code/CPU_multi_cycle/CPU_multi_cycle\vivado.jou
 #-----------------------------------------------------------
@@ -15,29 +15,7 @@ launch_simulation
 open_wave_config E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg
 source CPU_single_cycle_tb.tcl
 relaunch_sim
-launch_runs synth_1
-wait_on_run synth_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top top [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-launch_runs impl_1
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-open_run impl_1
-add_files -fileset constrs_1 -norecurse E:/code/CPU_multi_cycle/src/my.xdc
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-launch_runs impl_1
-wait_on_run impl_1
-refresh_design
 launch_runs impl_1 -to_step write_bitstream
 wait_on_run impl_1
 open_hw
@@ -50,75 +28,30 @@ set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top top_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-launch_simulation
-open_wave_config E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg
-source top_tb.tcl
-add_wave {{/top_tb/my_top/my_CPU}} 
-add_wave {{/top_tb/my_top/my_debouncing}} 
-run 1000 us
-restart
-run 1000 us
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
 relaunch_sim
-close_sim
-close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
 close_design
-reset_run impl_1
 launch_runs impl_1
 wait_on_run impl_1
 open_run impl_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-refresh_design
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-launch_runs impl_1
-wait_on_run impl_1
-refresh_design
-place_ports test_port_regwre L1
-set_property IOSTANDARD LVCMOS33 [get_ports [list test_port_regwre]]
-set_property target_constrs_file E:/code/CPU_multi_cycle/src/my.xdc [current_fileset -constrset]
-save_constraints -force
+place_ports test_CLK P1
+set_property IOSTANDARD LVCMOS33 [get_ports [list test_CLK]]
+save_constraints
 reset_run impl_1
 launch_runs impl_1 -to_step write_bitstream
 wait_on_run impl_1
+close_design
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
+relaunch_sim
+relaunch_sim
+save_wave_config {E:/code/CPU_multi_cycle/CPU_multi_cycle/Control_unit_tb_behav.wcfg}
+close_sim

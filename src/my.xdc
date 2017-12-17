@@ -57,3 +57,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports test_port_regwre]
 
 set_property PACKAGE_PIN U14 [get_ports test_button_out_n]
 set_property IOSTANDARD LVCMOS33 [get_ports test_button_out_n]
+
+
+set_property PACKAGE_PIN P1 [get_ports test_CLK]
+set_property IOSTANDARD LVCMOS33 [get_ports test_CLK]

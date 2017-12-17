@@ -30,7 +30,7 @@ module CPU_single_cycle_tb();
     initial begin
         CLK = 1;
         Reset = 0;
-        #30
+        #35
         Reset = 1;
         #5000
         Reset = 0;
