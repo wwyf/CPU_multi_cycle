@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Sun Dec 17 19:43:37 2017
+| Date         : Mon Dec 18 11:30:30 2017
 | Host         : wyf running 64-bit Service Pack 1  (build 7601)
 | Command      : report_io -file top_io_placed.rpt
 | Design       : top

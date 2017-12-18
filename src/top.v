@@ -65,7 +65,7 @@ module top(
     // );
 // 没有对时钟下降沿消抖？也不需要消抖。
     CPU_single_cycle my_CPU( 
-        .CLK(test_CLK),
+        .CLK(button_out),
         .Reset(Reset),
         .out_sign1(out_sign1),
         .out_sign2(out_sign2),

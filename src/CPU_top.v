@@ -7,7 +7,7 @@ module CPU_single_cycle(
     output [15:0] out_sign2,// RS寄存器地址：RS寄存器数据
     output [15:0] out_sign3,// RT寄存器地址：RT寄存器数据
     output [15:0] out_sign4, // ALU结果输出：DB总线数据
-    output out_sign5
+    output  out_sign5
 );
 
     // control unit wire
@@ -25,7 +25,6 @@ module CPU_single_cycle(
     wire [1:0] PCSrc;
     wire [2:0] ALUOp;
 
-    assign out_sign5 = RegWre;
 
 
     wire [31:0] PCData;
@@ -74,9 +73,11 @@ module CPU_single_cycle(
 
     mux4to1_5 my_mux4to1_5(
         .sel(RegDst),
+        .Reset(Reset),
         .DataIn1(6'b111111),
         .DataIn2(Rt_reg),
         .DataIn3(Rd_reg),
+        // .DataIn4(6'b000010),
         .DataOut(Wre_reg)
     );
 
@@ -234,9 +235,12 @@ module CPU_single_cycle(
 
     assign out_sign2 = {3'b000,Rs_reg,Re_Data_1[7:0]};
     assign out_sign3 = {3'b000,Rt_reg,Re_Data_2[7:0]};
+    // assign out_sign3 = {3'b000,Rt_reg,3'b000,Rd_reg};
     assign out_sign4 = {ALU_result[7:0], Wre_back_data[7:0]};
+    // assign out_sign4 = {3'b000,Wre_reg, Wre_back_data[7:0]};
     assign out_sign1 = {Addr[7:0], PCData[7:0]};
 
+    assign out_sign5 = RegDst[0];
     
 
 endmodule

@@ -2,8 +2,8 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Sun Dec 17 19:40:58 2017
-# Process ID: 70064
+# Start of session at: Mon Dec 18 11:28:50 2017
+# Process ID: 152668
 # Current directory: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1
 # Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/top.vds
@@ -18,7 +18,7 @@ WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32
 WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
 WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 297.785 ; gain = 125.414
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 296.891 ; gain = 124.355
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [E:/code/CPU_multi_cycle/src/top.v:3]
 INFO: [Synth 8-638] synthesizing module 'debouncing' [E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:25]
@@ -34,8 +34,7 @@ INFO: [Synth 8-638] synthesizing module 'IR' [E:/code/CPU_multi_cycle/src/Ins_Me
 INFO: [Synth 8-256] done synthesizing module 'IR' (4#1) [E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:3]
 INFO: [Synth 8-638] synthesizing module 'mux4to1_5' [E:/code/CPU_multi_cycle/src/mux4to1_5.v:5]
 INFO: [Synth 8-256] done synthesizing module 'mux4to1_5' (5#1) [E:/code/CPU_multi_cycle/src/mux4to1_5.v:5]
-WARNING: [Synth 8-689] width (5) of port connection 'DataOut' does not match port width (32) of module 'mux4to1_5' [E:/code/CPU_multi_cycle/src/CPU_top.v:80]
-WARNING: [Synth 8-350] instance 'my_mux4to1_5' of module 'mux4to1_5' requires 7 connections, but only 5 given [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
+WARNING: [Synth 8-350] instance 'my_mux4to1_5' of module 'mux4to1_5' requires 7 connections, but only 6 given [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
 INFO: [Synth 8-638] synthesizing module 'RegFile' [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:2]
 INFO: [Synth 8-256] done synthesizing module 'RegFile' (6#1) [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:2]
 INFO: [Synth 8-638] synthesizing module 'MultiReg_32' [E:/code/CPU_multi_cycle/src/MultiReg_32.v:3]
@@ -109,7 +108,7 @@ INFO: [Synth 8-638] synthesizing module 'Get_output' [E:/code/CPU_multi_cycle/sr
 WARNING: [Synth 8-3848] Net InsMemRW in module/entity Get_output does not have driver. [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:16]
 INFO: [Synth 8-256] done synthesizing module 'Get_output' (14#1) [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:4]
 INFO: [Synth 8-256] done synthesizing module 'Control_unit' (15#1) [E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:3]
-WARNING: [Synth 8-350] instance 'my_control_unit' of module 'Control_unit' requires 19 connections, but only 18 given [E:/code/CPU_multi_cycle/src/CPU_top.v:213]
+WARNING: [Synth 8-350] instance 'my_control_unit' of module 'Control_unit' requires 19 connections, but only 18 given [E:/code/CPU_multi_cycle/src/CPU_top.v:214]
 INFO: [Synth 8-256] done synthesizing module 'CPU_single_cycle' (16#1) [E:/code/CPU_multi_cycle/src/CPU_top.v:3]
 INFO: [Synth 8-638] synthesizing module 'clkdiv_190hz' [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:4]
 INFO: [Synth 8-256] done synthesizing module 'clkdiv_190hz' (17#1) [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:4]
@@ -118,7 +117,7 @@ INFO: [Synth 8-226] default block is never used [E:/code/CPU_multi_cycle/src/DEB
 INFO: [Synth 8-256] done synthesizing module 'displayReg' (18#1) [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:23]
 INFO: [Synth 8-256] done synthesizing module 'top' (19#1) [E:/code/CPU_multi_cycle/src/top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 340.773 ; gain = 168.402
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 340.766 ; gain = 168.230
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -127,14 +126,13 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:Reset to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[4] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[3] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[2] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[1] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[0] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:75]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[4] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[3] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[2] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[1] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[0] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 340.773 ; gain = 168.402
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 340.766 ; gain = 168.230
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -150,22 +148,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 628.555 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 628.020 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 628.020 ; gain = 455.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 628.020 ; gain = 455.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 628.020 ; gain = 455.484
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "regFile_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "regFile_reg[2]" won't be mapped to RAM because it is too sparse
@@ -219,7 +217,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'ExtSel_reg' [E:/code/CPU_mu
 WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:80]
 WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:77]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 628.020 ; gain = 455.484
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -373,15 +371,15 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 628.555 ; gain = 456.184
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 628.020 ; gain = 455.484
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3917] design top has port num_ctrl[7] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 628.020 ; gain = 455.484
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 628.020 ; gain = 455.484
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -412,313 +410,56 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[31][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[30][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[30][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[29][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[29][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[28][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[28][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[27][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[27][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[26][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[26][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[25][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[25][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[24][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[24][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[23][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[23][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[22][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[22][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[21][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[21][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[20][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[20][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[19][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[19][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[18][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[18][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[17][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[17][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[16][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[16][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[15][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[15][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[14][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[14][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[13][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[13][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[12][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[12][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[11][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[11][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[10][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[10][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[9][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[9][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[8][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[8][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[7][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[7][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[6][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[6][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[5][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[5][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[4][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[4][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[3][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[3][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[2][31] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[2][31] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[1][31] '
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][31] )
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[31][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[30][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[30][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[29][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[29][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[28][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[28][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[27][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[27][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[26][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[26][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[25][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[25][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[24][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[24][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[23][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[23][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[22][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[22][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[21][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[21][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[20][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[20][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[19][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[19][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[18][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[18][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[17][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[17][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[16][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[16][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[15][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[15][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[14][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[14][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[13][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[13][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[12][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[12][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[11][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[11][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[10][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[10][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[9][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[9][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[8][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[8][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[7][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[7][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[6][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[6][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[5][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[5][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[4][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[4][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[3][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[3][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[2][30] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[2][30] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[1][30] '
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][30] )
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[31][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[30][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[30][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[29][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[29][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[28][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[28][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[27][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[27][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[26][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[26][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[25][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[25][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[24][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[24][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[23][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[23][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[22][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[22][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[21][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[21][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[20][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[20][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[19][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[19][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[18][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[18][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[17][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[17][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[16][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[16][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[15][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[15][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[14][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[14][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[13][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[13][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[12][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[12][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[11][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[11][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[10][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[10][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[9][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[9][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[8][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[8][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[7][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[7][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[6][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[6][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[5][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[5][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[4][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[4][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[3][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[3][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[2][29] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[2][29] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[1][29] '
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][29] )
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[31][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[30][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[30][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[29][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[29][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[28][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[28][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[27][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[27][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[26][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[26][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[25][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[25][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[24][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[24][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[23][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[23][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[22][28] '
-INFO: [Synth 8-3886] merging instance '\my_CPU/myregfile /\regFile_reg[22][28] ' (FDCE_1) to '\my_CPU/myregfile /\regFile_reg[21][28] '
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/myregfile /\regFile_reg[1][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[63][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[62][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[61][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[60][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[59][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[58][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[57][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[56][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[55][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[54][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[53][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[52][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[51][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[50][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[49][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[48][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[47][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[46][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[45][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[44][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[43][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[42][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[41][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[40][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[39][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[38][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[37][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[36][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[35][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[34][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[33][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[32][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[31][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[30][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[29][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[28][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[27][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[26][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[25][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[24][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[23][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[22][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[21][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[20][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[19][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[18][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[17][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[16][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[15][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[14][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[13][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[12][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[11][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[10][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[7][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[6][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[4][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[3][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[2][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[1][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[0][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[111][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[110][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[109][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_CPU/MY_Data_Memory /\ram_reg[108][0] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[31] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[30] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[29] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[28] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[27] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[26] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[25] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[24] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[23] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[22] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[21] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[20] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[19] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[18] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[17] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[16] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[15] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[14] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[13] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[12] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[11] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[10] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[9] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[8] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_pc/Addr_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[30][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[31][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[29][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[28][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[27][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[26][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[25][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[24][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[23][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[22][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[21][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[20][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[19][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[18][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[17][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[16][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[15][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[14][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[13][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[12][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[11][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[10][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[9][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[8][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[7][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[6][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[5][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[4][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[3][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[2][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[1][31] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[30][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[31][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[29][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[28][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[27][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[26][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[25][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[24][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[23][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[22][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[21][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[20][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[19][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[18][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[17][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[16][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[15][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[14][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[13][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[12][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[11][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[10][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[9][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[8][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[7][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[6][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[5][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[4][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[3][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[2][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[1][30] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[30][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[31][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[29][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[28][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[27][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[26][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[25][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[24][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[23][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[22][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[21][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[20][29] ) is unused and will be removed from module RegFile.
-WARNING: [Synth 8-3332] Sequential element (\regFile_reg[19][29] ) is unused and will be removed from module RegFile.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Rd_reg_reg[0] ' (FD) to '\my_CPU/my_ir/Imm_number_reg[11] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Rd_reg_reg[3] ' (FD) to '\my_CPU/my_ir/Imm_number_reg[14] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Rd_reg_reg[4] ' (FD) to '\my_CPU/my_ir/Imm_number_reg[15] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Rd_reg_reg[2] ' (FD) to '\my_CPU/my_ir/Imm_number_reg[13] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Rd_reg_reg[1] ' (FD) to '\my_CPU/my_ir/Imm_number_reg[12] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Imm_number_reg[6] ' (FD) to '\my_CPU/my_ir/Sa_number_reg[0] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Imm_number_reg[7] ' (FD) to '\my_CPU/my_ir/Sa_number_reg[1] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Imm_number_reg[8] ' (FD) to '\my_CPU/my_ir/Sa_number_reg[2] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Imm_number_reg[9] ' (FD) to '\my_CPU/my_ir/Sa_number_reg[3] '
+INFO: [Synth 8-3886] merging instance '\my_CPU/my_ir/Imm_number_reg[10] ' (FD) to '\my_CPU/my_ir/Sa_number_reg[4] '
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[31] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[30] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[29] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[28] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[27] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[24] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/ALUoutDR/data_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_clkdiv_190hz/q_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Rd_reg_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Rd_reg_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Rd_reg_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Rd_reg_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Rd_reg_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Imm_number_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Imm_number_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Imm_number_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Imm_number_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Imm_number_reg[10] ) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 745.094 ; gain = 572.559
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -732,24 +473,24 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 745.094 ; gain = 572.559
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -773,7 +514,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -786,7 +527,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -798,25 +539,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -833,56 +574,62 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    35|
-|3     |LUT1   |    35|
-|4     |LUT2   |    68|
-|5     |LUT3   |   126|
-|6     |LUT4   |    28|
-|7     |LUT5   |    97|
-|8     |LUT6   |   168|
-|9     |MUXF7  |    18|
-|10    |FDCE   |    29|
-|11    |FDPE   |     4|
-|12    |FDRE   |    69|
-|13    |LD     |    11|
-|14    |IBUF   |     6|
-|15    |OBUF   |    17|
+|2     |CARRY4 |    47|
+|3     |LUT1   |    69|
+|4     |LUT2   |   128|
+|5     |LUT3   |  1474|
+|6     |LUT4   |    79|
+|7     |LUT5   |  1365|
+|8     |LUT6   |  2159|
+|9     |MUXF7  |   491|
+|10    |MUXF8  |    29|
+|11    |FDCE   |  1046|
+|12    |FDPE   |     4|
+|13    |FDRE   |  1155|
+|14    |LD     |    17|
+|15    |IBUF   |     6|
+|16    |OBUF   |    17|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+--------------------+-----------------+------+
 |      |Instance            |Module           |Cells |
 +------+--------------------+-----------------+------+
-|1     |top                 |                 |   713|
-|2     |  my_CPU            |CPU_single_cycle |   540|
-|3     |    DBDR            |MultiReg_32      |    13|
-|4     |    My_ALU32        |ALU32            |    30|
-|5     |    my_control_unit |Control_unit     |   219|
-|6     |      my_get_output |Get_output       |   210|
-|7     |    my_ir           |IR               |   156|
-|8     |    my_pc           |PC               |   112|
-|9     |  my_clkdiv_190hz   |clkdiv_190hz     |    43|
-|10    |  my_debouncing     |debouncing       |    64|
-|11    |  my_displayReg     |displayReg       |    32|
+|1     |top                 |                 |  8088|
+|2     |  my_CPU            |CPU_single_cycle |  7932|
+|3     |    ADR             |MultiReg_32      |    88|
+|4     |    ALUoutDR        |MultiReg_32_0    |   519|
+|5     |    BDR             |MultiReg_32_1    |    40|
+|6     |    DBDR            |MultiReg_32_2    |    64|
+|7     |    MY_Data_Memory  |Data_Memory      |  2569|
+|8     |    My_ALU32        |ALU32            |    48|
+|9     |    my_control_unit |Control_unit     |   389|
+|10    |      my_get_output |Get_output       |   382|
+|11    |    my_ir           |IR               |   209|
+|12    |    my_pc           |PC               |   197|
+|13    |    myregfile       |RegFile          |  3761|
+|14    |  my_clkdiv_190hz   |clkdiv_190hz     |    43|
+|15    |  my_debouncing     |debouncing       |    62|
+|16    |  my_displayReg     |displayReg       |    19|
 +------+--------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 628.555 ; gain = 456.184
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 745.094 ; gain = 572.559
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2130 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 628.555 ; gain = 131.152
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 628.555 ; gain = 456.184
+Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 745.094 ; gain = 248.055
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 745.094 ; gain = 572.559
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 2 inverter(s) to 8 load pin(s).
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 1993 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 11 instances were transformed.
-  LD => LDCE: 11 instances
+  A total of 17 instances were transformed.
+  LD => LDCE: 17 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-297 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+104 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 628.555 ; gain = 423.031
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 628.555 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 17 19:41:32 2017...
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 745.094 ; gain = 540.289
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 745.094 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 18 11:29:49 2017...

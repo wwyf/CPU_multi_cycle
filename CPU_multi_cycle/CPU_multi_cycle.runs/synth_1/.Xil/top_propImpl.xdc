@@ -43,3 +43,5 @@ set_property src_info {type:XDC file:1 line:54 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN L1 [get_ports test_port_regwre]
 set_property src_info {type:XDC file:1 line:58 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U14 [get_ports test_button_out_n]
+set_property src_info {type:XDC file:1 line:62 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P1 [get_ports test_CLK]

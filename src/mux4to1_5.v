@@ -9,7 +9,7 @@ module mux4to1_5(
     input [4:0] DataIn2,
     input [4:0] DataIn3,
     input [4:0] DataIn4,
-    output reg [31:0] DataOut
+    output reg [4:0] DataOut
     );
     always@(*) begin
         if (Reset == 0) begin

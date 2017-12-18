@@ -21,12 +21,12 @@ module IR(
     // end
 
     always@(posedge CLK) begin
-        Op_code =  Ins_Data[31:26];
-        Rs_reg = Ins_Data[25:21];
-        Rt_reg = Ins_Data[20:16];
-        Rd_reg = Ins_Data[15:11];
-        Sa_number = Ins_Data[10:6];
-        Imm_number = Ins_Data[15:0];   
+        Op_code <=  Ins_Data[31:26];
+        Rs_reg <= Ins_Data[25:21];
+        Rt_reg <= Ins_Data[20:16];
+        Rd_reg <= Ins_Data[15:11];
+        Sa_number <= Ins_Data[10:6];
+        Imm_number <= Ins_Data[15:0];   
     end
 
 endmodule
