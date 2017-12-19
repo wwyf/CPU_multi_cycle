@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Mon Dec 18 11:30:30 2017
+| Date         : Wed Dec 20 00:55:42 2017
 | Host         : wyf running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -50,91 +50,92 @@ Table of Contents
 +--------------------------------------+-------------------------------------------------------------+--------------------------------+------------------+----------------+
 |  my_CPU/my_ir/Addr_reg[19]           |                                                             |                                |                1 |              1 |
 |  my_CPU/my_ir/data_reg[31]_0         |                                                             |                                |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[20][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-|  my_CPU/my_ir/regFile_reg[31][0]     |                                                             |                                |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[17][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[31][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[13][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[30][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+|  my_CPU/my_ir/regFile_reg[31][0]     |                                                             |                                |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[23][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            |                                                             |                                |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[11][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[29][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[30][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[13][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[9][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[28][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[21][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[9][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[20][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[8][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[29][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[8][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[19][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[28][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[15][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[27][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[8][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[15][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[8][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[26][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[19][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[25][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[24][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[18][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[26][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[11][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[13][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[21][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[23][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[11][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[25][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/regFile[1][21]_i_2_n_0  |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[24][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[17][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[31][31][0] | my_CPU/Addr[27]_i_2_n_0        |                1 |              1 |
 |  my_CPU/my_ir/Addr_reg[31]_1[0]      |                                                             |                                |                1 |              2 |
 |  my_CPU/my_ir/regFile_reg[1][0]_0[0] |                                                             |                                |                1 |              2 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[20][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[15][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[26][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/E[0]                                 | my_CPU/Addr[31]_i_3_n_0        |                1 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[9][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[11][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[1][0]_0[0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[8][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[19][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[7][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[30][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[6][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[2][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[5][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[18][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[4][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[28][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[25][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[27][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[15][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[24][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-|  my_clkdiv_190hz/CLK                 |                                                             |                                |                1 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[31][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[3][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[23][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[26][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[17][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[29][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[20][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[21][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[31][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[17][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[30][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[13][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[28][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[11][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[25][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[29][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[3][31][0]  | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[24][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/Addr[31]_i_3_n_0        |                2 |              4 |
+|  my_clkdiv_190hz/CLK                 |                                                             |                                |                1 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[27][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[23][31][0] | my_CPU/Addr[31]_i_3_n_0        |                3 |              4 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[20][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                3 |              5 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[19][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                3 |              5 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[18][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                3 |              5 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                3 |              5 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                4 |              5 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[20][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                3 |              5 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[17][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                3 |              5 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                3 |              5 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[23][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                4 |              5 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[21][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                3 |              5 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[18][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                4 |              6 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[19][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[23][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                5 |              6 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                4 |              5 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[20][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[19][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[18][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[17][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                4 |              6 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[21][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                3 |              6 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[23][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                5 |              6 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[58][0][0]                           |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[59][0][0]                           |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[5][0][0]                            |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[60][0][0]                           |                                |                2 |              8 |
@@ -147,11 +148,11 @@ Table of Contents
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[67][0][0]                           |                                |                4 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[68][0][0]                           |                                |                6 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[69][0][0]                           |                                |                4 |              8 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[6][0][0]                            |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[71][0][0]                           |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[72][0][0]                           |                                |                4 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[73][0][0]                           |                                |                7 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[74][0][0]                           |                                |                7 |              8 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[118][0][0]                          |                                |                7 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[75][0][0]                           |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[76][0][0]                           |                                |                6 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[77][0][0]                           |                                |                6 |              8 |
@@ -180,8 +181,7 @@ Table of Contents
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[98][0][0]                           |                                |                3 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[99][0][0]                           |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[9][0][0]                            |                                |                7 |              8 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[6][0][0]                            |                                |                5 |              8 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[3][0][0]                            |                                |                6 |              8 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[11][0][0]                           |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/E[0]                                        |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[0][0][0]                            |                                |                8 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[100][0][0]                          |                                |                6 |              8 |
@@ -203,8 +203,8 @@ Table of Contents
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[115][0][0]                          |                                |                8 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[116][0][0]                          |                                |                7 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[117][0][0]                          |                                |                8 |              8 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[118][0][0]                          |                                |                7 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[119][0][0]                          |                                |                6 |              8 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[11][0][0]                           |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[120][0][0]                          |                                |                8 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[12][0]_1[0]                         |                                |                7 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[13][0][0]                           |                                |                6 |              8 |
@@ -236,6 +236,7 @@ Table of Contents
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[37][0][0]                           |                                |                6 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[38][0][0]                           |                                |                6 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[39][0][0]                           |                                |                5 |              8 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[3][0][0]                            |                                |                6 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[40][0][0]                           |                                |                3 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[41][0][0]                           |                                |                6 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[42][0][0]                           |                                |                7 |              8 |
@@ -255,61 +256,60 @@ Table of Contents
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[55][0][0]                           |                                |                5 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[56][0][0]                           |                                |                6 |              8 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[57][0][0]                           |                                |                6 |              8 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/ALUoutDR/ram_reg[58][0][0]                           |                                |                5 |              8 |
 |  my_CPU/my_ir/ram_reg[70][0]         |                                                             |                                |                4 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[13][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                6 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                5 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                4 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[9][31][0]  | my_CPU/regFile[8][14]_i_1_n_0  |                6 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[8][31][0]  | my_CPU/regFile[8][14]_i_1_n_0  |                5 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[15][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                6 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[6][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                6 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                6 |             10 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[11][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                4 |             10 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[25][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                6 |             11 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                5 |             10 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[9][31][0]  | my_CPU/regFile[8][14]_i_1_n_0  |                6 |             10 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[15][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                6 |             10 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[8][31][0]  | my_CPU/regFile[8][14]_i_1_n_0  |                5 |             10 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                6 |             10 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                4 |             10 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[13][31][0] | my_CPU/regFile[8][14]_i_1_n_0  |                6 |             10 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[6][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                6 |             10 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[2][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                9 |             11 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[26][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                5 |             11 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[29][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                9 |             11 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[28][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                7 |             11 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[27][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                8 |             11 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[7][31][0]  | my_CPU/Addr[27]_i_2_n_0        |               10 |             11 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[5][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                7 |             11 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[1][0]_0[0] | my_CPU/Addr[27]_i_2_n_0        |                7 |             11 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[25][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                6 |             11 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[4][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                9 |             11 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[3][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                8 |             11 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[24][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                6 |             11 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[3][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                8 |             11 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[1][0]_0[0] | my_CPU/Addr[27]_i_2_n_0        |                7 |             11 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[31][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                9 |             11 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[27][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                8 |             11 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[30][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                8 |             11 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[28][31][0] | my_CPU/regFile[16][9]_i_1_n_0  |                7 |             11 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[2][31][0]  | my_CPU/Addr[27]_i_2_n_0        |                9 |             11 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[19][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |                6 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[17][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |               11 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[9][31][0]  | my_CPU/regFile[8][30]_i_1_n_0  |               11 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[8][31][0]  | my_CPU/regFile[8][30]_i_1_n_0  |               10 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[31][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               11 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[30][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               11 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[29][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               10 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[28][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |                9 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[27][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |                6 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[26][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |                7 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[25][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               10 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[24][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               11 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[23][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |               10 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |               10 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[21][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |               10 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[20][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |                9 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[19][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |                6 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[18][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |                7 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[15][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |               13 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[25][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               10 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[16][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |                8 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |               10 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[17][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |               11 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[13][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |                7 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |               10 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[9][31][0]  | my_CPU/regFile[8][30]_i_1_n_0  |               11 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[27][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |                6 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[15][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |               13 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[11][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |                6 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[13][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |                7 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[18][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |                7 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[28][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |                9 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[14][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |               10 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[22][31][0] | my_CPU/regFile[16][25]_i_1_n_0 |               10 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[10][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |               10 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[12][31][0] | my_CPU/regFile[8][30]_i_1_n_0  |                9 |             16 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[1][0]_0[0] | my_CPU/regFile[1][21]_i_2_n_0  |                8 |             17 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[3][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                7 |             17 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[4][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                8 |             17 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[2][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                9 |             17 |
-| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[5][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                9 |             17 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[29][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               10 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[30][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               11 |             16 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[31][31][0] | my_CPU/regFile[24][20]_i_1_n_0 |               11 |             16 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[7][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |               14 |             17 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[5][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                9 |             17 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[4][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                8 |             17 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[3][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                7 |             17 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[2][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |                9 |             17 |
+| ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[1][0]_0[0] | my_CPU/regFile[1][21]_i_2_n_0  |                8 |             17 |
 | ~test_button_in_OBUF_BUFG            | my_CPU/my_control_unit/my_get_output/regFile_reg[6][31][0]  | my_CPU/regFile[1][21]_i_2_n_0  |               14 |             18 |
 |  CLK_IBUF_BUFG                       |                                                             |                                |                5 |             19 |
 |  CLK_IBUF_BUFG                       |                                                             | my_CPU/key_sec_pre_reg[0]      |                8 |             26 |
