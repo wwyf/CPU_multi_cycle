@@ -13,49 +13,49 @@ Command: synth_design -top top -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
-WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
-WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:239]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:251]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:263]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 298.063 ; gain = 125.570
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 293.738 ; gain = 121.434
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [E:/code/CPU_multi_cycle/src/top.v:3]
-INFO: [Synth 8-638] synthesizing module 'debouncing' [E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:25]
+INFO: [Synth 8-638] synthesizing module 'top' [D:/code/CPU_multi_cycle/src/top.v:3]
+INFO: [Synth 8-638] synthesizing module 'debouncing' [D:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:25]
 	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'debouncing' (1#1) [E:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:25]
-INFO: [Synth 8-638] synthesizing module 'CPU_single_cycle' [E:/code/CPU_multi_cycle/src/CPU_top.v:3]
-INFO: [Synth 8-638] synthesizing module 'PC' [E:/code/CPU_multi_cycle/src/PC.v:3]
-INFO: [Synth 8-256] done synthesizing module 'PC' (2#1) [E:/code/CPU_multi_cycle/src/PC.v:3]
-INFO: [Synth 8-638] synthesizing module 'Ins_Memory' [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:3]
-INFO: [Synth 8-3876] $readmem data file 'E:/code/CPU_multi_cycle/src/Ins_Memory/code.mem' is read successfully [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:12]
-INFO: [Synth 8-256] done synthesizing module 'Ins_Memory' (3#1) [E:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:3]
-INFO: [Synth 8-638] synthesizing module 'IR' [E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:3]
-INFO: [Synth 8-256] done synthesizing module 'IR' (4#1) [E:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:3]
-INFO: [Synth 8-638] synthesizing module 'mux4to1_5' [E:/code/CPU_multi_cycle/src/mux4to1_5.v:5]
-INFO: [Synth 8-256] done synthesizing module 'mux4to1_5' (5#1) [E:/code/CPU_multi_cycle/src/mux4to1_5.v:5]
-WARNING: [Synth 8-350] instance 'my_mux4to1_5' of module 'mux4to1_5' requires 7 connections, but only 6 given [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
-INFO: [Synth 8-638] synthesizing module 'RegFile' [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:2]
-INFO: [Synth 8-256] done synthesizing module 'RegFile' (6#1) [E:/code/CPU_multi_cycle/src/RegFile/RegFile.v:2]
-INFO: [Synth 8-638] synthesizing module 'MultiReg_32' [E:/code/CPU_multi_cycle/src/MultiReg_32.v:3]
-INFO: [Synth 8-256] done synthesizing module 'MultiReg_32' (7#1) [E:/code/CPU_multi_cycle/src/MultiReg_32.v:3]
-INFO: [Synth 8-638] synthesizing module 'Extend' [E:/code/CPU_multi_cycle/src/Extend.v:4]
-INFO: [Synth 8-256] done synthesizing module 'Extend' (8#1) [E:/code/CPU_multi_cycle/src/Extend.v:4]
-INFO: [Synth 8-638] synthesizing module 'mux2to1_32' [E:/code/CPU_multi_cycle/src/mux2to1_32.v:3]
-INFO: [Synth 8-256] done synthesizing module 'mux2to1_32' (9#1) [E:/code/CPU_multi_cycle/src/mux2to1_32.v:3]
-INFO: [Synth 8-638] synthesizing module 'ALU32' [E:/code/CPU_multi_cycle/src/ALU/ALU32.v:22]
-INFO: [Synth 8-226] default block is never used [E:/code/CPU_multi_cycle/src/ALU/ALU32.v:33]
-INFO: [Synth 8-256] done synthesizing module 'ALU32' (10#1) [E:/code/CPU_multi_cycle/src/ALU/ALU32.v:22]
-INFO: [Synth 8-638] synthesizing module 'Data_Memory' [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:2]
+INFO: [Synth 8-256] done synthesizing module 'debouncing' (1#1) [D:/code/CPU_multi_cycle/src/DEBUG/debouncing.v:25]
+INFO: [Synth 8-638] synthesizing module 'CPU_single_cycle' [D:/code/CPU_multi_cycle/src/CPU_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'PC' [D:/code/CPU_multi_cycle/src/PC.v:3]
+INFO: [Synth 8-256] done synthesizing module 'PC' (2#1) [D:/code/CPU_multi_cycle/src/PC.v:3]
+INFO: [Synth 8-638] synthesizing module 'Ins_Memory' [D:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'D:/code/CPU_multi_cycle/src/Ins_Memory/code.mem' is read successfully [D:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:12]
+INFO: [Synth 8-256] done synthesizing module 'Ins_Memory' (3#1) [D:/code/CPU_multi_cycle/src/Ins_Memory/Ins_Memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'IR' [D:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IR' (4#1) [D:/code/CPU_multi_cycle/src/Ins_Memory/IR.v:3]
+INFO: [Synth 8-638] synthesizing module 'mux4to1_5' [D:/code/CPU_multi_cycle/src/mux4to1_5.v:5]
+INFO: [Synth 8-256] done synthesizing module 'mux4to1_5' (5#1) [D:/code/CPU_multi_cycle/src/mux4to1_5.v:5]
+WARNING: [Synth 8-350] instance 'my_mux4to1_5' of module 'mux4to1_5' requires 7 connections, but only 6 given [D:/code/CPU_multi_cycle/src/CPU_top.v:74]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [D:/code/CPU_multi_cycle/src/RegFile/RegFile.v:2]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (6#1) [D:/code/CPU_multi_cycle/src/RegFile/RegFile.v:2]
+INFO: [Synth 8-638] synthesizing module 'MultiReg_32' [D:/code/CPU_multi_cycle/src/MultiReg_32.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MultiReg_32' (7#1) [D:/code/CPU_multi_cycle/src/MultiReg_32.v:3]
+INFO: [Synth 8-638] synthesizing module 'Extend' [D:/code/CPU_multi_cycle/src/Extend.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Extend' (8#1) [D:/code/CPU_multi_cycle/src/Extend.v:4]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_32' [D:/code/CPU_multi_cycle/src/mux2to1_32.v:3]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_32' (9#1) [D:/code/CPU_multi_cycle/src/mux2to1_32.v:3]
+INFO: [Synth 8-638] synthesizing module 'ALU32' [D:/code/CPU_multi_cycle/src/ALU/ALU32.v:22]
+INFO: [Synth 8-226] default block is never used [D:/code/CPU_multi_cycle/src/ALU/ALU32.v:33]
+INFO: [Synth 8-256] done synthesizing module 'ALU32' (10#1) [D:/code/CPU_multi_cycle/src/ALU/ALU32.v:22]
+INFO: [Synth 8-638] synthesizing module 'Data_Memory' [D:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:2]
 WARNING: [Synth 8-4767] Trying to implement RAM 'ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
 	2: Unable to determine number of words or word size in RAM. 
 RAM "ram_reg" dissolved into registers
-INFO: [Synth 8-256] done synthesizing module 'Data_Memory' (11#1) [E:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:2]
-INFO: [Synth 8-638] synthesizing module 'mux4to1_32' [E:/code/CPU_multi_cycle/src/mux4to1_32.v:5]
-INFO: [Synth 8-256] done synthesizing module 'mux4to1_32' (12#1) [E:/code/CPU_multi_cycle/src/mux4to1_32.v:5]
-INFO: [Synth 8-638] synthesizing module 'Control_unit' [E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:3]
-INFO: [Synth 8-638] synthesizing module 'Next_state' [E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Data_Memory' (11#1) [D:/code/CPU_multi_cycle/src/Data_Memory/Data_Memory.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux4to1_32' [D:/code/CPU_multi_cycle/src/mux4to1_32.v:5]
+INFO: [Synth 8-256] done synthesizing module 'mux4to1_32' (12#1) [D:/code/CPU_multi_cycle/src/mux4to1_32.v:5]
+INFO: [Synth 8-638] synthesizing module 'Control_unit' [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:3]
+INFO: [Synth 8-638] synthesizing module 'Next_state' [D:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:6]
 	Parameter sIF bound to: 3'b000 
 	Parameter sID bound to: 3'b001 
 	Parameter sEXE bound to: 3'b010 
@@ -79,8 +79,8 @@ INFO: [Synth 8-638] synthesizing module 'Next_state' [E:/code/CPU_multi_cycle/sr
 	Parameter And bound to: 6'b010001 
 	Parameter jal bound to: 6'b111010 
 	Parameter halt bound to: 6'b111111 
-INFO: [Synth 8-256] done synthesizing module 'Next_state' (13#1) [E:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:6]
-INFO: [Synth 8-638] synthesizing module 'Get_output' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Next_state' (13#1) [D:/code/CPU_multi_cycle/src/Control_unit/Next_state.v:6]
+INFO: [Synth 8-638] synthesizing module 'Get_output' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:4]
 	Parameter sIF bound to: 3'b000 
 	Parameter sID bound to: 3'b001 
 	Parameter sEXE bound to: 3'b010 
@@ -104,19 +104,19 @@ INFO: [Synth 8-638] synthesizing module 'Get_output' [E:/code/CPU_multi_cycle/sr
 	Parameter And bound to: 6'b010001 
 	Parameter jal bound to: 6'b111010 
 	Parameter halt bound to: 6'b111111 
-WARNING: [Synth 8-3848] Net InsMemRW in module/entity Get_output does not have driver. [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:16]
-INFO: [Synth 8-256] done synthesizing module 'Get_output' (14#1) [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:4]
-INFO: [Synth 8-256] done synthesizing module 'Control_unit' (15#1) [E:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:3]
-WARNING: [Synth 8-350] instance 'my_control_unit' of module 'Control_unit' requires 19 connections, but only 18 given [E:/code/CPU_multi_cycle/src/CPU_top.v:214]
-INFO: [Synth 8-256] done synthesizing module 'CPU_single_cycle' (16#1) [E:/code/CPU_multi_cycle/src/CPU_top.v:3]
-INFO: [Synth 8-638] synthesizing module 'clkdiv_190hz' [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:4]
-INFO: [Synth 8-256] done synthesizing module 'clkdiv_190hz' (17#1) [E:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:4]
-INFO: [Synth 8-638] synthesizing module 'displayReg' [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:23]
-INFO: [Synth 8-226] default block is never used [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:50]
-INFO: [Synth 8-256] done synthesizing module 'displayReg' (18#1) [E:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:23]
-INFO: [Synth 8-256] done synthesizing module 'top' (19#1) [E:/code/CPU_multi_cycle/src/top.v:3]
+WARNING: [Synth 8-3848] Net InsMemRW in module/entity Get_output does not have driver. [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:16]
+INFO: [Synth 8-256] done synthesizing module 'Get_output' (14#1) [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Control_unit' (15#1) [D:/code/CPU_multi_cycle/src/Control_unit/Control_unit.v:3]
+WARNING: [Synth 8-350] instance 'my_control_unit' of module 'Control_unit' requires 19 connections, but only 18 given [D:/code/CPU_multi_cycle/src/CPU_top.v:214]
+INFO: [Synth 8-256] done synthesizing module 'CPU_single_cycle' (16#1) [D:/code/CPU_multi_cycle/src/CPU_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'clkdiv_190hz' [D:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:4]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv_190hz' (17#1) [D:/code/CPU_multi_cycle/src/DEBUG/clkdiv_190hz.v:4]
+INFO: [Synth 8-638] synthesizing module 'displayReg' [D:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:23]
+INFO: [Synth 8-226] default block is never used [D:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:50]
+INFO: [Synth 8-256] done synthesizing module 'displayReg' (18#1) [D:/code/CPU_multi_cycle/src/DEBUG/displayReg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (19#1) [D:/code/CPU_multi_cycle/src/top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 340.934 ; gain = 168.441
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 336.715 ; gain = 164.410
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -125,44 +125,44 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[4] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[3] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[2] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[1] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
-WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[0] to constant 0 [E:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[4] to constant 0 [D:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[3] to constant 0 [D:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[2] to constant 0 [D:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[1] to constant 0 [D:/code/CPU_multi_cycle/src/CPU_top.v:74]
+WARNING: [Synth 8-3295] tying undriven pin my_mux4to1_5:DataIn4[0] to constant 0 [D:/code/CPU_multi_cycle/src/CPU_top.v:74]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 340.934 ; gain = 168.441
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 336.715 ; gain = 164.410
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [E:/code/CPU_multi_cycle/src/my.xdc]
-Finished Parsing XDC File [E:/code/CPU_multi_cycle/src/my.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/code/CPU_multi_cycle/src/my.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [D:/code/CPU_multi_cycle/src/my.xdc]
+Finished Parsing XDC File [D:/code/CPU_multi_cycle/src/my.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/code/CPU_multi_cycle/src/my.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 629.246 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 624.520 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 629.246 ; gain = 456.754
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 624.520 ; gain = 452.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 629.246 ; gain = 456.754
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 624.520 ; gain = 452.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 629.246 ; gain = 456.754
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 624.520 ; gain = 452.215
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "regFile_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "regFile_reg[2]" won't be mapped to RAM because it is too sparse
@@ -205,18 +205,18 @@ INFO: [Synth 8-5587] ROM size for "WrRegDSrc" is below threshold of ROM address 
 INFO: [Synth 8-5546] ROM "PCSrc" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "nWR" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5587] ROM size for "ExtSel" is below threshold of ROM address width. It will be mapped to LUTs
-WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:75]
-WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:76]
-WARNING: [Synth 8-327] inferring latch for variable 'DBDataSrc_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:78]
-WARNING: [Synth 8-327] inferring latch for variable 'nRD_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:81]
-WARNING: [Synth 8-327] inferring latch for variable 'nWR_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:82]
-WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:70]
-WARNING: [Synth 8-327] inferring latch for variable 'WrRegDSrc_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:79]
-WARNING: [Synth 8-327] inferring latch for variable 'ExtSel_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:110]
-WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:80]
-WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [E:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'DBDataSrc_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:78]
+WARNING: [Synth 8-327] inferring latch for variable 'nRD_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'nWR_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'WrRegDSrc_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'ExtSel_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:110]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:80]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [D:/code/CPU_multi_cycle/src/Control_unit/Get_output.v:77]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 629.246 ; gain = 456.754
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 624.520 ; gain = 452.215
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -370,15 +370,15 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 629.246 ; gain = 456.754
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 624.520 ; gain = 452.215
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3917] design top has port num_ctrl[7] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 629.246 ; gain = 456.754
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 624.520 ; gain = 452.215
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 629.246 ; gain = 456.754
+Finished Parallel Reinference  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 624.520 ; gain = 452.215
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -456,9 +456,9 @@ WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Imm_number_reg[8] ) is
 WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Imm_number_reg[9] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\my_CPU/my_ir/Imm_number_reg[10] ) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 741.547 ; gain = 569.242
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -472,24 +472,24 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:50 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:16 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 741.547 ; gain = 569.242
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -513,7 +513,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:23 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -526,7 +526,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:23 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -538,25 +538,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -612,11 +612,11 @@ Report Instance Areas:
 |16    |  my_displayReg     |displayReg       |    19|
 +------+--------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 745.762 ; gain = 573.270
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 741.547 ; gain = 569.242
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 745.762 ; gain = 247.191
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 745.762 ; gain = 573.270
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 741.547 ; gain = 244.934
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 741.547 ; gain = 569.242
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -629,6 +629,6 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 104 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 745.762 ; gain = 540.992
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 745.762 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 00:54:59 2017...
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:26 . Memory (MB): peak = 741.547 ; gain = 536.070
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 741.547 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 21 09:30:05 2017...

@@ -49,12 +49,12 @@ start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.cache/wt [current_project]
-  set_property parent.project_path E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.xpr [current_project]
-  set_property ip_repo_paths e:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.cache/ip [current_project]
-  set_property ip_output_repo e:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.cache/ip [current_project]
-  add_files -quiet E:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/top.dcp
-  read_xdc E:/code/CPU_multi_cycle/src/my.xdc
+  set_property webtalk.parent_dir D:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.cache/wt [current_project]
+  set_property parent.project_path D:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.xpr [current_project]
+  set_property ip_repo_paths d:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.cache/ip [current_project]
+  set_property ip_output_repo d:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.cache/ip [current_project]
+  add_files -quiet D:/code/CPU_multi_cycle/CPU_multi_cycle/CPU_multi_cycle.runs/synth_1/top.dcp
+  read_xdc D:/code/CPU_multi_cycle/src/my.xdc
   link_design -top top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

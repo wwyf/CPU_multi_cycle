@@ -11,25 +11,11 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="750000000fs"></ZoomStartTime>
-      <ZoomEndTime time="1120440006fs"></ZoomEndTime>
-      <Cursor1Time time="900000000fs"></Cursor1Time>
+      <ZoomStartTime time="765916667fs"></ZoomStartTime>
+      <ZoomEndTime time="1176916668fs"></ZoomEndTime>
+      <Cursor1Time time="938417000fs"></Cursor1Time>
    </zoom_setting>
    <WVObjectSize size="52" />
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/CLK" type="logic">
-      <obj_property name="ElementShortName">CLK</obj_property>
-      <obj_property name="ObjectShortName">CLK</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/Reset" type="logic">
-      <obj_property name="ElementShortName">Reset</obj_property>
-      <obj_property name="ObjectShortName">Reset</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/Addr" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">Addr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Addr[31:0]</obj_property>
-      <obj_property name="label">current_Addr[31:0]</obj_property>
-   </wvobject>
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/out_sign1" type="array">
       <obj_property name="ElementShortName">out_sign1[15:0]</obj_property>
       <obj_property name="ObjectShortName">out_sign1[15:0]</obj_property>
@@ -45,6 +31,20 @@
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/out_sign4" type="array">
       <obj_property name="ElementShortName">out_sign4[15:0]</obj_property>
       <obj_property name="ObjectShortName">out_sign4[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/Addr" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Addr[31:0]</obj_property>
+      <obj_property name="label">current_Addr[31:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/PCData" type="array">
       <obj_property name="ElementShortName">PCData[31:0]</obj_property>
@@ -113,6 +113,7 @@
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/PCSrc" type="array">
       <obj_property name="ElementShortName">PCSrc[1:0]</obj_property>
       <obj_property name="ObjectShortName">PCSrc[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/PC4" type="array">
       <obj_property name="ElementShortName">PC4[31:0]</obj_property>
@@ -135,10 +136,12 @@
       <obj_property name="ElementShortName">[31][31:0]</obj_property>
       <obj_property name="ObjectShortName">regFile[31][31:0]</obj_property>
       <obj_property name="label">$31</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/myregfile/regFile" type="array">
       <obj_property name="ElementShortName">regFile[1:31][31:0]</obj_property>
       <obj_property name="ObjectShortName">regFile[1:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject db_ref_id="1" fp_name="/CPU_single_cycle_tb/My_CPU/myregfile/regFile[1]" type="array">
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">[1][31:0]</obj_property>
